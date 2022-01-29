@@ -2,6 +2,9 @@
 export const copy = () => {
   return app.gulp.src(app.path.src.files)
     .pipe(app.gulp.dest(app.path.build.files))
-    .pipe(app.gulp.src(`${app.path.src.sprite}/stack/*.*`))
-    .pipe(app.gulp.dest(app.path.build.sprite))
+}
+
+export const copySprite = () => {
+  return app.gulp.src(`${app.path.src.sprite}/stack/*.{svg,html}`)
+  .pipe(app.gulp.dest(app.path.build.sprite))
 }

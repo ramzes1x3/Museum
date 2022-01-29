@@ -1,7 +1,7 @@
 {
-  "name": "museum",
+  "name": "gulp_2",
   "private": true,
-  "description": "museum",
+  "description": "gulp_2",
   "version": "2.0.0",
   "main": "gulpfile.js",
   "type": "module",

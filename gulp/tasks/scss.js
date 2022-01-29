@@ -21,23 +21,30 @@ export const scss = () => {
       outputStyle: 'expanded'
     })
     )
-    .pipe(groupCssMediaQueries())
-    .pipe(webpcss(
-      {
-        webpClass: ".webp",
-        noWebpClass: ".no-webp"
-      }
-    ))
-    .pipe(autoprefixer({
-      grid: true,
-      overrideBrowserslist: ["last 3 versions"],
-      cascade: true
-    }))
     .pipe(
       app.plugins.if(
-      app.isDev,
-      app.gulp.dest(app.path.build.css))
-      )//если нужен несжатый файл css
+        app.isBuild,
+        groupCssMediaQueries())
+    )
+    .pipe(
+      app.plugins.if(
+        app.isBuild,
+        autoprefixer({
+          grid: true,
+          overrideBrowserslist: ["last 3 versions"],
+          cascade: true
+        }))
+    )
+    .pipe(
+      app.plugins.if(
+        app.isBuild,
+        webpcss(
+        {
+          webpClass: ".webp",
+          noWebpClass: ".no-webp"
+        }
+      ))
+    )
     .pipe(
       app.plugins.if(
         app.isBuild,
