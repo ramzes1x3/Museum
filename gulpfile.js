@@ -13,6 +13,7 @@ global.app = {
 
 import { copy } from "./gulp/tasks/copy.js";
 import { copySprite } from "./gulp/tasks/copy.js";
+import { copySvg } from "./gulp/tasks/copy.js";
 import { reset } from "./gulp/tasks/reset.js";
 import { html } from "./gulp/tasks/html.js";
 import { server } from "./gulp/tasks/server.js";
@@ -39,7 +40,7 @@ function watcher() {
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
 
 //основные задачи
-const mainTasks = gulp.series(fonts, gulp.parallel(copy,copySprite, html, scss, js, images));
+const mainTasks = gulp.series(fonts, gulp.parallel(copy, copySprite, html, scss, js, images));
 
 //строим сценарий
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));

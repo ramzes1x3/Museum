@@ -1,0 +1,51 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+.page-header {
+  width: 100%;
+  height: 116px;
+  position: fixed;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, auto) 280px;
+    grid-template-rows: 116px;
+    background-color: #fff;
+    align-items: center;
+  }
+
+  &__logo-sfedu {}
+
+  &__logo-museum {}
+
+  &__header-menu {
+    font-family: $open_sans_regular;
+    @include font_base(400, 18px, 1.39, #014080);
+    text-transform: uppercase;
+  }
+
+  &__sign-up {
+    font-family: $open_sans_bold;
+    @include font_base(700, 20px, 1.35, #ffffff);
+    text-transform: uppercase;
+    width: 280px;
+    height: 45px;
+    background-color: #FF9F43;
+    border-radius: 35px;
+  }
+}
+
+.icon-box {}
+
+.header-menu {
+
+  &__list-menu {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+  }
+
+  &__item {}
+
+  &__link {}
+}
