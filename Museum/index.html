@@ -9,26 +9,46 @@
         <link rel="stylesheet" href="css/style.min.css">
         <link rel="shortcut icon" href="img/logo.svg">
         <link rel="preload" as="font" type="font/woff2"
-            href="fonts/OpenSans-ExtraBoldItalic.woff2" crossorigin>
+          href="fonts/OpenSans-Regular.woff2" crossorigin>
         <link rel="preload" as="font" type="font/woff2"
-            href="fonts/OpenSans-ExtraBoldItalic.woff2" crossorigin>
+          href="fonts/OpenSans-Bold.woff2" crossorigin>
     </head>
     <body class="page__body">
-        <header class="page-header">
-  <svg role='img' aria-label='' width="100px" height="100px" focusable='false' class='icon-box' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
-    <use xlink:href='sprite/icons.svg#logo'></use>
-  </svg>
-    <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-            <li class="site-list__item1"><a href="#">test</a></li>
-            <li class="site-list__item2"><a href="#"></a></li>
-            <li class="site-list__item3"><a href="#"></a></li>
-            <li class="site-list__item4"><a href="#"></a></li>
-            <li class="site-list__item5"><a href="#"></a></li>
-        </ul>
+        <div class="page-wrapper">
+          <header class="page-header">
+  <div class="page-header__container">
+    <picture><source srcset="img/logo_sfedu.webp" type="image/webp"><img src="img/logo_sfedu.png" alt="Логотип ЮФУ" class="page-header__logo-sfedu"></picture>
+    <div class="page-header__logo-museum">
+      <svg role='img' aria-label='' focusable='false' class='icon-box' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
+        <use xlink:href='sprite/icons.svg#logo_museum'></use>
+      </svg>
+    </div>
+    <nav class="page-header__header-menu header-menu">
+      <ul class="header-menu__list-menu">
+        <li class="header-menu__item">
+          <a href="#" class="header-menu__link">Главная</a>
+        </li>
+        <li class="header-menu__item">
+          <a href="#" class="header-menu__link">Экспозиция</a>
+        </li>
+        <li class="header-menu__item">
+          <a href="#" class="header-menu__link">Контакты</a>
+        </li>
+      </ul>
     </nav>
+    <button type="button" class="page-header__sign-up">Хочу прийти!</button>
+  </div>
 </header>
 
+          <main class="page-main">
+  <div class="page-main__container">main</div>
+</main>
+
+          <footer class="page-footer">
+  <div class="page-footer__container">footer</div>
+</footer>
+
+        </div>
     </body>
     <script src="js/app.min.js"></script>
 </html>

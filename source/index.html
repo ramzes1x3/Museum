@@ -9,12 +9,16 @@
         <link rel="stylesheet" href="css/style.min.css">
         <link rel="shortcut icon" href="@img/logo.svg">
         <link rel="preload" as="font" type="font/woff2"
-            href="fonts/OpenSans-ExtraBoldItalic.woff2" crossorigin>
+          href="fonts/OpenSans-Regular.woff2" crossorigin>
         <link rel="preload" as="font" type="font/woff2"
-            href="fonts/OpenSans-ExtraBoldItalic.woff2" crossorigin>
+          href="fonts/OpenSans-Bold.woff2" crossorigin>
     </head>
     <body class="page__body">
-        @@include('html/_header.html')
+        <div class="page-wrapper">
+          @@include('html/_header.html')
+          @@include('html/_main_index.html')
+          @@include('html/_footer.html')
+        </div>
     </body>
     <script src="js/app.min.js"></script>
 </html>

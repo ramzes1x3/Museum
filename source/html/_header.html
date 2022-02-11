@@ -1,14 +1,24 @@
 <header class="page-header">
-  <svg role='img' aria-label='' width="100px" height="100px" focusable='false' class='icon-box' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
-    <use xlink:href='sprite/icons.svg#logo'></use>
-  </svg>
-    <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-            <li class="site-list__item1"><a href="#">test</a></li>
-            <li class="site-list__item2"><a href="#"></a></li>
-            <li class="site-list__item3"><a href="#"></a></li>
-            <li class="site-list__item4"><a href="#"></a></li>
-            <li class="site-list__item5"><a href="#"></a></li>
-        </ul>
+  <div class="page-header__container">
+    <img src="@img/logo_sfedu.png" alt="Логотип ЮФУ" class="page-header__logo-sfedu">
+    <div class="page-header__logo-museum">
+      <svg role='img' aria-label='' focusable='false' class='icon-box' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
+        <use xlink:href='sprite/icons.svg#logo_museum'></use>
+      </svg>
+    </div>
+    <nav class="page-header__header-menu header-menu">
+      <ul class="header-menu__list-menu">
+        <li class="header-menu__item">
+          <a href="#" class="header-menu__link">Главная</a>
+        </li>
+        <li class="header-menu__item">
+          <a href="#" class="header-menu__link">Экспозиция</a>
+        </li>
+        <li class="header-menu__item">
+          <a href="#" class="header-menu__link">Контакты</a>
+        </li>
+      </ul>
     </nav>
+    <button type="button" class="page-header__sign-up">Хочу прийти!</button>
+  </div>
 </header>
