@@ -65,8 +65,8 @@ a {
 .page-wrapper {
   display: grid;
   position: relative;
-  grid-template-rows: auto 1fr auto;
-  min-height: 200%;
+  grid-template-rows: 1fr auto;
+  min-height: 100%;
   overflow: hidden;
 }
 

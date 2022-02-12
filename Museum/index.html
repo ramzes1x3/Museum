@@ -17,11 +17,15 @@
         <div class="page-wrapper">
           <header class="page-header">
   <div class="page-header__container">
-    <picture><source srcset="img/logo_sfedu.webp" type="image/webp"><img src="img/logo_sfedu.png" alt="Логотип ЮФУ" class="page-header__logo-sfedu"></picture>
+    <a href="https://sfedu.ru/" target="_blank" class="page-header__link-sfedu">
+      <picture><source srcset="img/logo_sfedu.webp" type="image/webp"><img src="img/logo_sfedu.png" alt="Логотип ЮФУ" class="page-header__logo-sfedu" width="94px" height="87px"></picture>
+    </a>
     <div class="page-header__logo-museum">
-      <svg role='img' aria-label='' focusable='false' class='icon-box' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
-        <use xlink:href='sprite/icons.svg#logo_museum'></use>
-      </svg>
+    <a href="#" class="page-header__link-museum">
+        <svg role='img' aria-label='' focusable='false' class='icon-box' width="450px" height="79px" xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
+          <use xlink:href='sprite/icons.svg#logo_museum'></use>
+        </svg>
+      </a>
     </div>
     <nav class="page-header__header-menu header-menu">
       <ul class="header-menu__list-menu">
@@ -29,7 +33,43 @@
           <a href="#" class="header-menu__link">Главная</a>
         </li>
         <li class="header-menu__item">
-          <a href="#" class="header-menu__link">Экспозиция</a>
+          <a href="#" class="header-menu__link link--exposition">Экспозиция
+            <span class="header-menu__arrow arrow">
+              <svg class="header-menu__arrow-svg" width="13" height="12" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.327 1.00017L6.22014 6.35131L0.88831 1.17935" stroke="#7594B5" stroke-width="2"/>
+                </svg>
+            </span>
+          </a>
+          <ul class="header-menu__list-exposition list-exposition">
+            <li class="list-exposition__item">
+              <a href="#" class="list-exposition__link">
+                <svg class="list-exposition__svg"role='img' aria-label='' focusable='false' width='77px' height='77px' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
+                  <use xlink:href='sprite/icons.svg#icon_exposition_link_1'></use>
+                </svg>
+                <span class="list-exposition__link-text">Радиотехника и телевидение</span>
+              </a></li>
+            <li class="list-exposition__item">
+              <a href="#" class="list-exposition__link">
+                <svg class="list-exposition__svg"role='img' aria-label='' focusable='false' width='77px' height='77px' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
+                  <use xlink:href='sprite/icons.svg#icon_exposition_link_2'></use>
+                </svg>
+                <span class="list-exposition__link-text">Автоматика <br>и вычислительная техника</span>
+              </a></li>
+            <li class="list-exposition__item">
+              <a href="#" class="list-exposition__link">
+                <svg class="list-exposition__svg"role='img' aria-label='' focusable='false' width='77px' height='77px' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
+                  <use xlink:href='sprite/icons.svg#icon_exposition_link_3'></use>
+                </svg>
+                <span class="list-exposition__link-text">Авиация и космонавтика</span>
+              </a></li>
+            <li class="list-exposition__item">
+              <a href="#" class="list-exposition__link">
+                <svg class="list-exposition__svg"role='img' aria-label='' focusable='false' width='77px' height='77px' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
+                  <use xlink:href='sprite/icons.svg#icon_exposition_link_4'></use>
+                </svg>
+                <span class="list-exposition__link-text">Электроника <br>и информационная безопасность</span>
+              </a></li>
+          </ul>
         </li>
         <li class="header-menu__item">
           <a href="#" class="header-menu__link">Контакты</a>
