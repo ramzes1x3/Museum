@@ -271,11 +271,17 @@ button {
   .page-header__svg-desktop-museum, .page-header__logo-desktop-sfedu, .page-header__sign-up {
     display: none;
   }
+  .page-header__logo-desktop-sfedu:hover {
+    opacity: 1;
+  }
   .page-header__logo-desktop-sfedu:active {
     opacity: 0.6;
   }
   .page-header__link-museum {
     margin: 0;
+  }
+  .page-header__link-museum:hover {
+    opacity: 1;
   }
   .page-header__link-museum:active {
     opacity: 0.6;
