@@ -24,6 +24,10 @@
     }
 
     &__logo-desktop-sfedu {
+      &:hover {
+        opacity: 1;
+      }
+
       &:active {
         opacity: 0.6;
       }
@@ -31,6 +35,10 @@
 
     &__link-museum {
       margin: 0;
+
+      &:hover {
+        opacity: 1;
+      }
 
       &:active {
         opacity: 0.6;
