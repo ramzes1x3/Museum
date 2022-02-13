@@ -1,0 +1,8 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+@media (max-width: 767.98px) {
+  .page-main {
+    margin-top: 75px;
+  }
+}
