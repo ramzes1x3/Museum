@@ -18,13 +18,17 @@
           <header class="page-header">
   <div class="page-header__container">
     <a href="https://sfedu.ru/" target="_blank" class="page-header__link-sfedu">
-      <picture><source srcset="img/logo_sfedu.webp" type="image/webp"><img src="img/logo_sfedu.png" alt="Логотип ЮФУ" class="page-header__logo-sfedu" width="94px" height="87px"></picture>
+      <picture><source srcset="img/logo_sfedu.webp" type="image/webp"><img class="page-header__logo-desktop-sfedu" src="img/logo_sfedu.png" alt="Логотип ЮФУ" width="94px" height="87px"></picture>
+      <picture><source srcset="img/logo_sfedu.webp" type="image/webp"><img class="page-header__logo-mobile-sfedu" src="img/logo_sfedu.png" alt="Логотип ЮФУ" width="62px" height="62px"></picture>
     </a>
     <div class="page-header__logo-museum">
-    <a href="#" class="page-header__link-museum">
-        <svg role='img' aria-label='' focusable='false' class='icon-box' width="450px" height="79px" xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
-          <use xlink:href='sprite/icons.svg#logo_museum'></use>
-        </svg>
+      <a href="#" class="page-header__link-museum">
+          <svg class="page-header__svg-desktop-museum" role='img' aria-label='Ссылка на главную страницу музея' focusable='false' class='icon-box' width="260px" height="79px" xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
+            <use xlink:href='sprite/icons.svg#logo_museum'></use>
+          </svg>
+          <svg class="page-header__svg-mobile-museum" role='img' aria-label='Ссылка на главную страницу музея' focusable='false' class='icon-box' width="58px" height="58px" xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
+            <use xlink:href='sprite/icons.svg#logo_museum_mobile'></use>
+          </svg>
       </a>
     </div>
     <nav class="page-header__header-menu header-menu">
@@ -32,13 +36,17 @@
         <li class="header-menu__item">
           <a href="#" class="header-menu__link">Главная</a>
         </li>
-        <li class="header-menu__item">
-          <a href="#" class="header-menu__link link--exposition">Экспозиция
+        <li class="header-menu__item item--expostion-mobile">
+          <a href="#" class="header-menu__link link--exposition">
+            <span class="header-menu__exposition-link-text">Экспозиция</span>
             <span class="header-menu__arrow arrow">
               <svg class="header-menu__arrow-svg" width="13" height="12" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11.327 1.00017L6.22014 6.35131L0.88831 1.17935" stroke="#7594B5" stroke-width="2"/>
-                </svg>
+              </svg>
             </span>
+            <svg class="header-menu__exposition-svg" role='img' aria-label='' focusable='false' width='50px' height='50px' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
+              <use xlink:href='sprite/icons.svg#icon_exposition_mobile'></use>
+            </svg>
           </a>
           <ul class="header-menu__list-exposition list-exposition">
             <li class="list-exposition__item">
@@ -64,19 +72,59 @@
               </a></li>
             <li class="list-exposition__item">
               <a href="#" class="list-exposition__link">
-                <svg class="list-exposition__svg"role='img' aria-label='' focusable='false' width='77px' height='77px' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
+                <svg class="list-exposition__svg "role='img' aria-label='' focusable='false' width='77px' height='77px' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
                   <use xlink:href='sprite/icons.svg#icon_exposition_link_4'></use>
                 </svg>
                 <span class="list-exposition__link-text">Электроника <br>и информационная безопасность</span>
               </a></li>
           </ul>
         </li>
+        <li class="header-menu__item item--event-mobile">
+          <a href="#" class="header-menu__link">
+            <svg role='img' aria-label='' focusable='false' width='48px' height='48px' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
+              <use xlink:href='sprite/icons.svg#icon_event_mobile'></use>
+            </svg>
+          </a>
+        </li>
         <li class="header-menu__item">
-          <a href="#" class="header-menu__link">Контакты</a>
+          <a href="#" class="header-menu__link">
+            <span class="header-menu__contacts">Контакты</span>
+          </a>
         </li>
       </ul>
     </nav>
     <button type="button" class="page-header__sign-up">Хочу прийти!</button>
+
+    <ul class="header-menu__list-exposition-mobile list-exposition-mobile">
+      <li class="list-exposition-mobile__item">
+        <a href="#" class="list-exposition-mobile__link">
+          <svg class="list-exposition-mobile__svg"role='img' aria-label='' focusable='false' width='77px' height='77px' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
+            <use xlink:href='sprite/icons.svg#icon_exposition_link_1'></use>
+          </svg>
+          <span class="list-exposition-mobile__link-text">Радиотехника и телевидение</span>
+        </a></li>
+      <li class="list-exposition-mobile__item">
+        <a href="#" class="list-exposition-mobile__link">
+          <svg class="list-exposition-mobile__svg"role='img' aria-label='' focusable='false' width='77px' height='77px' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
+            <use xlink:href='sprite/icons.svg#icon_exposition_link_2'></use>
+          </svg>
+          <span class="list-exposition-mobile__link-text">Автоматика <br>и вычислительная техника</span>
+        </a></li>
+      <li class="list-exposition-mobile__item">
+        <a href="#" class="list-exposition-mobile__link">
+          <svg class="list-exposition-mobile__svg"role='img' aria-label='' focusable='false' width='77px' height='77px' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
+            <use xlink:href='sprite/icons.svg#icon_exposition_link_3'></use>
+          </svg>
+          <span class="list-exposition-mobile__link-text">Авиация и космонавтика</span>
+        </a></li>
+      <li class="list-exposition-mobile__item">
+        <a href="#" class="list-exposition-mobile__link">
+          <svg class="list-exposition-mobile__svg "role='img' aria-label='' focusable='false' width='77px' height='77px' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
+            <use xlink:href='sprite/icons.svg#icon_exposition_link_4'></use>
+          </svg>
+          <span class="list-exposition-mobile__link-text">Электроника <br>и информационная безопасность</span>
+        </a></li>
+    </ul>
   </div>
 </header>
 
