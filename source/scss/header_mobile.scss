@@ -78,6 +78,14 @@
       position: relative;
     }
 
+    &__arrow {
+
+      &:hover {
+        cursor: auto;
+      }
+
+    }
+
     &__link {
       display: grid;
       align-items: center;
