@@ -16,7 +16,7 @@
     overflow: visible;
   }
 
-  &__logo-sfedu {
+  &__logo-desktop-sfedu {
     &:hover {
       opacity: 0.8;
     }
@@ -28,14 +28,12 @@
 
   &__link-museum {
     margin-left: 20px;
-  }
 
-  &__logo-museum {
-    &:hover {
+    &:hover svg {
       opacity: 0.8;
     }
 
-    &:active {
+    &:active svg {
       opacity: 0.6;
     }
   }
@@ -65,6 +63,11 @@
       cursor: pointer;
       box-shadow: inset 1px 1px 10px 1px #a86527;
     }
+  }
+
+  &__logo-mobile-sfedu,
+  &__svg-mobile-museum {
+    display: none;
   }
 }
 
@@ -111,6 +114,14 @@
   &__link._active &__arrow-svg path {
     stroke: #003268;
   }
+
+  &__exposition-svg {
+    display: none;
+  }
+}
+
+.item--event-mobile {
+  display: none;
 }
 
 .list-exposition._active {
@@ -127,6 +138,11 @@
   background-color: #fff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   overflow-y: auto;
+}
+
+.list-exposition-mobile._active,
+.list-exposition-mobile {
+  display: none;
 }
 
 .list-exposition {
