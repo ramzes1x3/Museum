@@ -1,0 +1,121 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+@media (max-width: 767.98px) {
+  .page-footer {
+    width: 100%;
+    height: 345px;
+    background-color: #003268;
+    position: relative;
+
+    &__container {
+      width: 300px;
+      @include font_base(400, 20px, 1.35, #F7F7F7);
+      display: grid;
+      padding: 15px 25px;
+      grid-template-areas:
+        "a a"
+        "i i"
+        "c c"
+        "copy copy";
+    }
+
+    &__wrapper-icons {
+      grid-area: i;
+      align-self: center;
+      justify-self: center;
+      padding-top: 20px;
+    }
+
+    &__vk-icon {
+      margin-right: 30px;
+    }
+
+    &__sfedu-icon,
+    &__vk-icon {
+      &:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+
+      &:active {
+        opacity: 0.6;
+      }
+    }
+
+    &__line {
+      position: absolute;
+      top: 187px;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      background-color: #F7F7F7;
+    }
+
+    &__address {
+      grid-area: a;
+      @include font_base(400, 14px, 1.36, #F7F7F7);
+      width: 95%;
+      margin-left: 0;
+      align-self: center;
+      position: relative;
+      padding-top: 5px;
+      text-align: center;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: -20px;
+        background: url(../img/footer_address_icon.svg) center no-repeat;
+        width: 17px;
+        height: 23px;
+
+      }
+    }
+
+    &__contacts {
+      grid-area: c;
+      justify-self: center;
+      align-self: center;
+      text-align: center;
+    }
+
+    &__number {
+      position: relative;
+      padding-top: 30px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 34px;
+        left: -15px;
+        background: url(../img/footer_mobile.svg) center no-repeat;
+        width: 23px;
+        height: 20px;
+      }
+    }
+
+    &__time {
+      padding-top: 5px;
+      padding-right: 20px;
+      @include font_base(400, 14px, 1.39, #FFFFFF);
+    }
+
+    &__copyright {
+      @include font_base(400, 12px, 1.33, #F7F7F7);
+      width: 220px;
+      justify-self: center;
+      align-self: center;
+      grid-area: copy;
+      padding-top: 30px;
+      text-align: center;
+      padding-right: 10px;
+    }
+  }
+
+  .footer-menu {
+    display: none;
+  }
+
+}

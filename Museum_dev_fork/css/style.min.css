@@ -381,7 +381,10 @@ button {
     text-align: center;
   }
   .list-exposition-mobile__link:hover {
-    background: rgba(255, 159, 67, 0.27);
+    background-color: rgba(255, 159, 67, 0);
+  }
+  .list-exposition-mobile__link:active {
+    background-color: rgba(255, 159, 67, 0.27);
   }
 }
 .page-main {
@@ -514,4 +517,113 @@ button {
 }
 .footer-menu__link:active {
   opacity: 0.6;
+}
+
+@media (max-width: 767.98px) {
+  .page-footer {
+    width: 100%;
+    height: 345px;
+    background-color: #003268;
+    position: relative;
+  }
+  .page-footer__container {
+    width: 300px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.35;
+    color: #F7F7F7;
+    display: grid;
+    padding: 15px 25px;
+    grid-template-areas: "a a" "i i" "c c" "copy copy";
+  }
+  .page-footer__wrapper-icons {
+    grid-area: i;
+    align-self: center;
+    justify-self: center;
+    padding-top: 20px;
+  }
+  .page-footer__vk-icon {
+    margin-right: 30px;
+  }
+  .page-footer__sfedu-icon:hover, .page-footer__vk-icon:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  .page-footer__sfedu-icon:active, .page-footer__vk-icon:active {
+    opacity: 0.6;
+  }
+  .page-footer__line {
+    position: absolute;
+    top: 187px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #F7F7F7;
+  }
+  .page-footer__address {
+    grid-area: a;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.36;
+    color: #F7F7F7;
+    width: 95%;
+    margin-left: 0;
+    align-self: center;
+    position: relative;
+    padding-top: 5px;
+    text-align: center;
+  }
+  .page-footer__address::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -20px;
+    background: url(../img/footer_address_icon.svg) center no-repeat;
+    width: 17px;
+    height: 23px;
+  }
+  .page-footer__contacts {
+    grid-area: c;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+  }
+  .page-footer__number {
+    position: relative;
+    padding-top: 30px;
+  }
+  .page-footer__number::before {
+    content: "";
+    position: absolute;
+    top: 34px;
+    left: -15px;
+    background: url(../img/footer_mobile.svg) center no-repeat;
+    width: 23px;
+    height: 20px;
+  }
+  .page-footer__time {
+    padding-top: 5px;
+    padding-right: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.39;
+    color: #FFFFFF;
+  }
+  .page-footer__copyright {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    color: #F7F7F7;
+    width: 220px;
+    justify-self: center;
+    align-self: center;
+    grid-area: copy;
+    padding-top: 30px;
+    text-align: center;
+    padding-right: 10px;
+  }
+
+  .footer-menu {
+    display: none;
+  }
 }
