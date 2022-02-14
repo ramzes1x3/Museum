@@ -5,4 +5,140 @@
   .page-main {
     margin-top: 75px;
   }
+
+  .main-menu {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fit, minmax(137px, 1fr));
+    grid-template-rows: repeat(auto-fill, auto);
+    row-gap: 15px;
+    justify-items: center;
+    align-items: center;
+    padding: 30px 0 30px 0;
+
+    &__item {
+      @include font_base(600, 16px, 1.375, #003268);
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    &__text {
+      display: grid;
+      padding-top: 20px;
+    }
+
+    &__link {
+      &:hover .main-menu__wrapper {
+        box-shadow: none;
+      }
+
+      &:hover .wrapper--news {
+        background: linear-gradient(180deg, rgba(255, 180, 107, 0.6) 18.75%, rgba(255, 193, 133, 0) 100%);
+      }
+
+      &:hover .wrapper--about-museum {
+        background: linear-gradient(180deg, rgba(255, 134, 18, 0.6) 15.62%, rgba(255, 159, 67, 0) 100%);
+      }
+
+      &:hover .wrapper--laba {
+        background: linear-gradient(180deg, rgba(0, 78, 162, 0.6) 0%, rgba(0, 78, 162, 0) 100%);
+      }
+
+      &:hover .wrapper--chat-bot {
+        background: linear-gradient(180deg, rgba(0, 50, 104, 0.6) 0%, rgba(0, 50, 104, 0) 100%);
+      }
+
+      &:active .main-menu__wrapper {
+        box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      &:active .wrapper--news {
+        background: linear-gradient(180deg, rgba(255, 180, 107, 0.6) 45.26%, rgba(255, 193, 133, 0) 241.41%);
+      }
+
+      &:active .wrapper--about-museum {
+        background: linear-gradient(180deg, rgba(255, 134, 18, 0.6) 32.89%, rgba(255, 159, 67, 0) 210.5%);
+      }
+
+      &:active .wrapper--chat-bot {
+        background: linear-gradient(180deg, rgba(0, 50, 104, 0.6) 0%, rgba(0, 50, 104, 0) 230.73%);
+      }
+
+      &:active .wrapper--laba {
+        background: linear-gradient(180deg, rgba(0, 78, 162, 0.6) 0%, rgba(0, 78, 162, 0) 205.73%);
+      }
+    }
+
+    &__wrapper {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      width: 127px;
+      height: 127px;
+      border-radius: 50%;
+    }
+  }
+
+  .about-museum {
+    font-family: $montserrat-regular;
+
+    &__container {
+      width: 310px;
+      margin-top: 20px;
+      padding: 0 5px;
+      height: 490px;
+      background: url(../img/background_1_mobile.jpg) 0 75% no-repeat;
+      display: grid;
+      grid-template-areas:
+        "t t"
+        "p p"
+        "f f"
+        "fi fi"
+      ;
+    }
+
+    &__title {
+      @include font_base(500, 18px, 1.22, #003268);
+      grid-area: t;
+      justify-self: center;
+      text-align: center;
+    }
+
+    &__bold-text {
+      @include font_base(800, 18px, 1.22, #003268);
+      text-transform: uppercase;
+    }
+
+    &__feature {
+      @include font_base(600, 14px, 1.29, #003268);
+      grid-area: f;
+    }
+
+    &__filling {
+      font-family: $open_sans_regular;
+      @include font_base(400, 13px, 1.15, #003268);
+      grid-area: fi;
+      text-align: center;
+    }
+
+    &__filling-mobile {
+      padding-top: 10px;
+      display: inline-block;
+      text-align: start;
+    }
+
+    &__text {
+      display: none;
+    }
+
+    &__photo {
+      grid-area: p;
+      height: 145px;
+      width: 145px;
+      background: url(../img/museum_first_block_mobile.jpg) 0 0 no-repeat;
+      border-radius: 50%;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+      justify-self: center;
+    }
+  }
 }

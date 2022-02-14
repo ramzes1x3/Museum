@@ -4,3 +4,195 @@
 .page-main {
   margin-top: 100px;
 }
+
+.main-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  padding: 40px 170px 0 170px;
+
+  &__item {
+    @include font_base(600, 22px, 1.375, #003268);
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__text {
+    display: grid;
+    padding-top: 20px;
+  }
+
+  &__link {
+    &:hover .main-menu__wrapper {
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    &:hover .wrapper--news {
+      background: linear-gradient(180deg, rgba(255, 180, 107, 0.6) 45.26%, rgba(255, 193, 133, 0) 241.41%);
+    }
+
+    &:hover .wrapper--about-museum {
+      background: linear-gradient(180deg, rgba(255, 134, 18, 0.6) 32.89%, rgba(255, 159, 67, 0) 210.5%);
+    }
+
+    &:hover .wrapper--chat-bot {
+      background: linear-gradient(180deg, rgba(0, 50, 104, 0.6) 0%, rgba(0, 50, 104, 0) 230.73%);
+    }
+
+    &:hover .wrapper--laba {
+      background: linear-gradient(180deg, rgba(0, 78, 162, 0.6) 0%, rgba(0, 78, 162, 0) 205.73%);
+    }
+
+    &:active .main-menu__wrapper {
+      box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+  }
+}
+
+.wrapper--news {
+  background: linear-gradient(180deg, rgba(255, 180, 107, 0.6) 18.75%, rgba(255, 193, 133, 0) 100%);
+}
+
+.wrapper--about-museum {
+  background: linear-gradient(180deg, rgba(255, 134, 18, 0.6) 15.62%, rgba(255, 159, 67, 0) 100%);
+}
+
+.wrapper--laba {
+  background: linear-gradient(180deg, rgba(0, 78, 162, 0.6) 0%, rgba(0, 78, 162, 0) 100%);
+}
+
+.wrapper--chat-bot {
+  background: linear-gradient(180deg, rgba(0, 50, 104, 0.6) 0%, rgba(0, 50, 104, 0) 100%);
+}
+
+.about-museum {
+  font-family: $montserrat-regular;
+
+  &__container {
+    margin-top: 90px;
+    padding: 50px 80px 70px 0;
+    height: 710px;
+    background: url(../img/background_1.jpg) 0 0 no-repeat;
+    display: grid;
+    grid-template-areas:
+      "t p"
+      "f p"
+      "fi p"
+      "t2 t2"
+    ;
+  }
+
+  &__title {
+    @include font_base(500, 38px, 1.21, #003268);
+    grid-area: t;
+  }
+
+  &__bold-text {
+    @include font_base(800, 38px, 1.21, #003268);
+    text-transform: uppercase;
+  }
+
+  &__feature {
+    @include font_base(600, 24px, 1.33, #003268);
+    grid-area: f;
+  }
+
+  &__filling {
+    font-family: $open_sans_regular;
+    @include font_base(400, 20px, 1.6, #003268);
+    grid-area: fi;
+  }
+
+  &__text {
+    font-family: $open_sans_regular;
+    @include font_base(600, 24px, 1.33, #003268);
+    grid-area: t2;
+  }
+
+  &__photo {
+    grid-area: p;
+    height: 500px;
+    width: 500px;
+    background: url(../img/museum_first_block.jpg) 0 0 no-repeat;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.news {
+  &__container {
+    margin-top: 40px;
+    padding-top: 50px;
+    height: 690px;
+    background: url(../img/background_2.jpg) 0 0 no-repeat;
+  }
+
+  &__title {
+    font-family: $montserrat-regular;
+    @include font_base(800, 38px, 1.21, #003268);
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}
+
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: #FF9F43;
+}
+
+.news-list {
+
+  .swiper-slide {
+    font-family: $open_sans_regular;
+    background-color: #FFFFFF;
+    padding: 6px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__article {
+    display: grid;
+  }
+
+  &__article-title,
+  &__about-news,
+  &__data {
+    padding-left: 5px;
+  }
+
+  &__article-title {
+    @include font_base(700, 22px, 1.36, #003268);
+    padding-bottom: 15px;
+  }
+
+  &__about-news {
+    @include font_base(600, 14px, 1.36, #5A7FA7);
+    padding-bottom: 15px;
+  }
+
+  &__data {
+    font-family: $montserrat-regular;
+    @include font_base(500, 14px, 1.21, #979797);
+    padding-bottom: 10px;
+  }
+}
+
+.swiper {
+  overflow: visible !important;
+}

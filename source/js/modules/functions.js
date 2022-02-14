@@ -7,6 +7,7 @@ export function menuSwitch() {
     const expositionMobile = document.querySelector('.list-exposition-mobile');
 
     arrowBtn.addEventListener("click", function(e) {
+      e.preventDefault();
       arrowBtn.classList.toggle('_active');
       expositionParent.classList.toggle('_active');
       expositionMenu.classList.toggle('_active');

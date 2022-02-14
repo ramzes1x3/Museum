@@ -1,4 +1,11 @@
 @font-face {
+  font-family: "Montserrat-regular";
+  font-display: swap;
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
   font-family: "OpenSans-Bold";
   font-display: swap;
   src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
@@ -391,9 +398,316 @@ button {
   margin-top: 100px;
 }
 
+.main-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  padding: 40px 170px 0 170px;
+}
+.main-menu__item {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.375;
+  color: #003268;
+  text-transform: uppercase;
+  text-align: center;
+}
+.main-menu__text {
+  display: grid;
+  padding-top: 20px;
+}
+.main-menu__link:hover .main-menu__wrapper {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.main-menu__link:hover .wrapper--news {
+  background: linear-gradient(180deg, rgba(255, 180, 107, 0.6) 45.26%, rgba(255, 193, 133, 0) 241.41%);
+}
+.main-menu__link:hover .wrapper--about-museum {
+  background: linear-gradient(180deg, rgba(255, 134, 18, 0.6) 32.89%, rgba(255, 159, 67, 0) 210.5%);
+}
+.main-menu__link:hover .wrapper--chat-bot {
+  background: linear-gradient(180deg, rgba(0, 50, 104, 0.6) 0%, rgba(0, 50, 104, 0) 230.73%);
+}
+.main-menu__link:hover .wrapper--laba {
+  background: linear-gradient(180deg, rgba(0, 78, 162, 0.6) 0%, rgba(0, 78, 162, 0) 205.73%);
+}
+.main-menu__link:active .main-menu__wrapper {
+  box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.main-menu__wrapper {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+
+.wrapper--news {
+  background: linear-gradient(180deg, rgba(255, 180, 107, 0.6) 18.75%, rgba(255, 193, 133, 0) 100%);
+}
+
+.wrapper--about-museum {
+  background: linear-gradient(180deg, rgba(255, 134, 18, 0.6) 15.62%, rgba(255, 159, 67, 0) 100%);
+}
+
+.wrapper--laba {
+  background: linear-gradient(180deg, rgba(0, 78, 162, 0.6) 0%, rgba(0, 78, 162, 0) 100%);
+}
+
+.wrapper--chat-bot {
+  background: linear-gradient(180deg, rgba(0, 50, 104, 0.6) 0%, rgba(0, 50, 104, 0) 100%);
+}
+
+.about-museum {
+  font-family: "Montserrat-regular", Arial, sans-serif;
+}
+.about-museum__container {
+  margin-top: 90px;
+  padding: 50px 80px 70px 0;
+  height: 710px;
+  background: url(../img/background_1.jpg) 0 0 no-repeat;
+  display: grid;
+  grid-template-areas: "t p" "f p" "fi p" "t2 t2";
+}
+.about-museum__title {
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 1.21;
+  color: #003268;
+  grid-area: t;
+}
+.about-museum__bold-text {
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 1.21;
+  color: #003268;
+  text-transform: uppercase;
+}
+.about-museum__feature {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  color: #003268;
+  grid-area: f;
+}
+.about-museum__filling {
+  font-family: "OpenSans-Regular", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #003268;
+  grid-area: fi;
+}
+.about-museum__text {
+  font-family: "OpenSans-Regular", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  color: #003268;
+  grid-area: t2;
+}
+.about-museum__photo {
+  grid-area: p;
+  height: 500px;
+  width: 500px;
+  background: url(../img/museum_first_block.jpg) 0 0 no-repeat;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.news__container {
+  margin-top: 40px;
+  padding-top: 50px;
+  height: 690px;
+  background: url(../img/background_2.jpg) 0 0 no-repeat;
+}
+.news__title {
+  font-family: "Montserrat-regular", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 1.21;
+  color: #003268;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: #FF9F43;
+}
+
+.news-list .swiper-slide {
+  font-family: "OpenSans-Regular", Arial, sans-serif;
+  background-color: #FFFFFF;
+  padding: 6px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+.news-list .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.news-list__article {
+  display: grid;
+}
+.news-list__article-title, .news-list__about-news, .news-list__data {
+  padding-left: 5px;
+}
+.news-list__article-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.36;
+  color: #003268;
+  padding-bottom: 15px;
+}
+.news-list__about-news {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.36;
+  color: #5A7FA7;
+  padding-bottom: 15px;
+}
+.news-list__data {
+  font-family: "Montserrat-regular", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #979797;
+  padding-bottom: 10px;
+}
+
+.swiper {
+  overflow: visible !important;
+}
+
 @media (max-width: 767.98px) {
   .page-main {
     margin-top: 75px;
+  }
+
+  .main-menu {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fit, minmax(137px, 1fr));
+    grid-template-rows: repeat(auto-fill, auto);
+    row-gap: 15px;
+    justify-items: center;
+    align-items: center;
+    padding: 30px 0 30px 0;
+  }
+  .main-menu__item {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.375;
+    color: #003268;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .main-menu__text {
+    display: grid;
+    padding-top: 20px;
+  }
+  .main-menu__link:hover .main-menu__wrapper {
+    box-shadow: none;
+  }
+  .main-menu__link:hover .wrapper--news {
+    background: linear-gradient(180deg, rgba(255, 180, 107, 0.6) 18.75%, rgba(255, 193, 133, 0) 100%);
+  }
+  .main-menu__link:hover .wrapper--about-museum {
+    background: linear-gradient(180deg, rgba(255, 134, 18, 0.6) 15.62%, rgba(255, 159, 67, 0) 100%);
+  }
+  .main-menu__link:hover .wrapper--laba {
+    background: linear-gradient(180deg, rgba(0, 78, 162, 0.6) 0%, rgba(0, 78, 162, 0) 100%);
+  }
+  .main-menu__link:hover .wrapper--chat-bot {
+    background: linear-gradient(180deg, rgba(0, 50, 104, 0.6) 0%, rgba(0, 50, 104, 0) 100%);
+  }
+  .main-menu__link:active .main-menu__wrapper {
+    box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+  .main-menu__link:active .wrapper--news {
+    background: linear-gradient(180deg, rgba(255, 180, 107, 0.6) 45.26%, rgba(255, 193, 133, 0) 241.41%);
+  }
+  .main-menu__link:active .wrapper--about-museum {
+    background: linear-gradient(180deg, rgba(255, 134, 18, 0.6) 32.89%, rgba(255, 159, 67, 0) 210.5%);
+  }
+  .main-menu__link:active .wrapper--chat-bot {
+    background: linear-gradient(180deg, rgba(0, 50, 104, 0.6) 0%, rgba(0, 50, 104, 0) 230.73%);
+  }
+  .main-menu__link:active .wrapper--laba {
+    background: linear-gradient(180deg, rgba(0, 78, 162, 0.6) 0%, rgba(0, 78, 162, 0) 205.73%);
+  }
+  .main-menu__wrapper {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 127px;
+    height: 127px;
+    border-radius: 50%;
+  }
+
+  .about-museum {
+    font-family: "Montserrat-regular", Arial, sans-serif;
+  }
+  .about-museum__container {
+    width: 310px;
+    margin-top: 20px;
+    padding: 0 5px;
+    height: 490px;
+    background: url(../img/background_1_mobile.jpg) 0 75% no-repeat;
+    display: grid;
+    grid-template-areas: "t t" "p p" "f f" "fi fi";
+  }
+  .about-museum__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    color: #003268;
+    grid-area: t;
+    justify-self: center;
+    text-align: center;
+  }
+  .about-museum__bold-text {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.22;
+    color: #003268;
+    text-transform: uppercase;
+  }
+  .about-museum__feature {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    color: #003268;
+    grid-area: f;
+  }
+  .about-museum__filling {
+    font-family: "OpenSans-Regular", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.15;
+    color: #003268;
+    grid-area: fi;
+    text-align: center;
+  }
+  .about-museum__filling-mobile {
+    padding-top: 10px;
+    display: inline-block;
+    text-align: start;
+  }
+  .about-museum__text {
+    display: none;
+  }
+  .about-museum__photo {
+    grid-area: p;
+    height: 145px;
+    width: 145px;
+    background: url(../img/museum_first_block_mobile.jpg) 0 0 no-repeat;
+    border-radius: 50%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    justify-self: center;
   }
 }
 .page-footer {
