@@ -41,6 +41,15 @@ body._lock {
   padding: 0;
 }
 
+*:hover,
+*:active,
+*:focus {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
 *,
 *::before,
 *::after {
@@ -94,7 +103,7 @@ button {
 }
 
 [class*=__container] {
-  width: 1340px;
+  width: 1120px;
   margin: 0px auto;
   padding: 0px 10px;
   overflow: hidden;
@@ -124,13 +133,13 @@ button {
   height: 100px;
   position: fixed;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+  background-color: #fff;
   z-index: 5;
 }
 .page-header__container {
   display: grid;
-  grid-template-columns: 94px 500px 1fr 1fr;
+  grid-template-columns: 81px 420px 1fr 1fr;
   grid-template-rows: 100px;
-  background-color: #fff;
   align-items: center;
   overflow: visible;
 }
@@ -141,7 +150,7 @@ button {
   opacity: 0.6;
 }
 .page-header__link-museum {
-  margin-left: 20px;
+  margin-left: 15px;
 }
 .page-header__link-museum:hover {
   opacity: 0.8;
@@ -152,20 +161,20 @@ button {
 .page-header__header-menu {
   font-family: "OpenSans-Regular", Arial, sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.39;
+  font-size: 17px;
+  line-height: 1.35;
   color: #014080;
   text-transform: uppercase;
 }
 .page-header__sign-up {
   font-family: "OpenSans-Bold", Arial, sans-serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 1.35;
   color: #ffffff;
   text-transform: uppercase;
-  width: 280px;
-  height: 45px;
+  width: 203px;
+  height: 34px;
   justify-self: end;
   background-color: #FF9F43;
   border-radius: 35px;
@@ -227,7 +236,7 @@ button {
 .list-exposition._active {
   font-family: "OpenSans-Bold", Arial, sans-serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 1.35;
   color: #002B59;
   text-transform: none;
@@ -237,7 +246,7 @@ button {
   grid-template-columns: 100%;
   grid-template-rows: repeat(auto-fit, auto);
   left: 0;
-  top: 63px;
+  top: 61.5px;
   background-color: #fff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   overflow-y: auto;
@@ -263,7 +272,7 @@ button {
   grid-template-columns: 90px 1fr;
   column-gap: 20px;
   align-items: center;
-  width: 528px;
+  width: 494px;
   padding: 10px 30px;
   text-align: center;
 }
@@ -412,12 +421,13 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
-  padding: 40px 170px 0 170px;
+  padding: 40px 100px 0 100px;
+  column-gap: 50px;
 }
 .main-menu__item {
   font-weight: 600;
-  font-size: 22px;
-  line-height: 1.375;
+  font-size: 20px;
+  line-height: 1.35;
   color: #003268;
   text-transform: uppercase;
   text-align: center;
@@ -448,8 +458,8 @@ button {
   display: grid;
   align-items: center;
   justify-content: center;
-  width: 180px;
-  height: 180px;
+  width: 171px;
+  height: 171px;
   border-radius: 50%;
 }
 
@@ -473,76 +483,78 @@ button {
   font-family: "Montserrat-regular", Arial, sans-serif;
 }
 .about-museum__container {
-  margin-top: 90px;
-  padding: 50px 80px 70px 0;
-  height: 710px;
+  margin-top: 80px;
+  padding: 40px 90px 70px 20px;
+  height: 580px;
   background: url(../img/background_1.png) 0 0 no-repeat;
   display: grid;
   grid-template-areas: "t p" "f p" "fi p" "t2 t2";
 }
 .about-museum__title {
   font-weight: 500;
-  font-size: 38px;
-  line-height: 1.21;
+  font-size: 35px;
+  line-height: 1.17;
   color: #003268;
   grid-area: t;
 }
 .about-museum__bold-text {
   font-weight: 800;
-  font-size: 38px;
-  line-height: 1.21;
+  font-size: 35px;
+  line-height: 1.17;
   color: #003268;
   text-transform: uppercase;
 }
 .about-museum__feature {
   font-weight: 600;
-  font-size: 24px;
-  line-height: 1.33;
+  font-size: 20px;
+  line-height: 1.4;
   color: #003268;
   grid-area: f;
 }
 .about-museum__filling {
   font-family: "OpenSans-Regular", Arial, sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 1.6;
+  font-size: 17px;
+  line-height: 1.35;
   color: #003268;
   grid-area: fi;
 }
 .about-museum__text {
   font-family: "OpenSans-Regular", Arial, sans-serif;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 1.33;
+  font-size: 20px;
+  line-height: 1.4;
   color: #003268;
   grid-area: t2;
 }
 .about-museum__photo {
+  margin-left: 60px;
+  margin-top: 25px;
   grid-area: p;
-  height: 500px;
-  width: 500px;
+  height: 358px;
+  width: 360px;
   background: url(../img/museum_first_block.jpg) 0 0 no-repeat;
   border-radius: 50%;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .news__main-wrapper {
-  width: 1320px;
+  width: 1120px;
   margin: 0 auto;
   position: relative;
 }
 .news__container {
-  width: 1220px;
+  width: 1000px;
   margin-top: 40px;
-  padding-top: 50px;
-  height: 690px;
-  background: url(../img/bg_desktop_slider.png) -110px 0 no-repeat;
+  padding-top: 20px;
+  height: 550px;
+  background: url(../img/bg_slider_desktop.png) -90px 0 no-repeat;
 }
 .news__title {
   font-family: "Montserrat-regular", Arial, sans-serif;
   font-weight: 800;
-  font-size: 38px;
-  line-height: 1.21;
+  font-size: 35px;
+  line-height: 1.23;
   color: #003268;
   text-align: center;
   padding-bottom: 30px;
@@ -558,6 +570,7 @@ button {
   width: 48px !important;
   border-radius: 50%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  z-index: 1 !important;
 }
 
 .swiper-button-prev:active,
@@ -598,9 +611,10 @@ button {
   padding-left: 5px;
 }
 .news-list__article-title {
+  margin-top: 10px;
   font-weight: 700;
-  font-size: 22px;
-  line-height: 1.36;
+  font-size: 17px;
+  line-height: 1.2;
   color: #003268;
   padding-bottom: 15px;
 }
@@ -617,8 +631,8 @@ button {
 .news-list__data {
   font-family: "Montserrat-regular", Arial, sans-serif;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.21;
+  font-size: 13px;
+  line-height: 1.23;
   color: #979797;
   padding-bottom: 10px;
 }
@@ -737,7 +751,7 @@ button {
     line-height: 1.15;
     color: #003268;
     grid-area: fi;
-    text-align: center;
+    text-align: start;
   }
   .about-museum__filling-mobile {
     padding-top: 10px;
@@ -831,7 +845,8 @@ button {
     color: #5A7FA7;
     padding-bottom: 15px;
   }
-  .news__link:hover .news-list__about-news {
+  .news-list .news__link:hover,
+.news-list .news__link:link {
     color: #5A7FA7;
   }
   .news-list__data {

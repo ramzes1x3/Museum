@@ -10,10 +10,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
-  padding: 40px 170px 0 170px;
+  padding: 40px 100px 0 100px;
+  column-gap: 50px;
 
   &__item {
-    @include font_base(600, 22px, 1.375, #003268);
+    @include font_base(600, 20px, 1.35, #003268);
     text-transform: uppercase;
     text-align: center;
   }
@@ -53,8 +54,8 @@
     display: grid;
     align-items: center;
     justify-content: center;
-    width: 180px;
-    height: 180px;
+    width: 171px;
+    height: 171px;
     border-radius: 50%;
   }
 }
@@ -79,9 +80,9 @@
   font-family: $montserrat-regular;
 
   &__container {
-    margin-top: 90px;
-    padding: 50px 80px 70px 0;
-    height: 710px;
+    margin-top: 80px;
+    padding: 40px 90px 70px 20px;
+    height: 580px;
     background: url(../img/background_1.png) 0 0 no-repeat;
     display: grid;
     grid-template-areas:
@@ -93,36 +94,38 @@
   }
 
   &__title {
-    @include font_base(500, 38px, 1.21, #003268);
+    @include font_base(500, 35px, 1.17, #003268);
     grid-area: t;
   }
 
   &__bold-text {
-    @include font_base(800, 38px, 1.21, #003268);
+    @include font_base(800, 35px, 1.17, #003268);
     text-transform: uppercase;
   }
 
   &__feature {
-    @include font_base(600, 24px, 1.33, #003268);
+    @include font_base(600, 20px, 1.4, #003268);
     grid-area: f;
   }
 
   &__filling {
     font-family: $open_sans_regular;
-    @include font_base(400, 20px, 1.6, #003268);
+    @include font_base(400, 17px, 1.35, #003268);
     grid-area: fi;
   }
 
   &__text {
     font-family: $open_sans_regular;
-    @include font_base(600, 24px, 1.33, #003268);
+    @include font_base(600, 20px, 1.4, #003268);
     grid-area: t2;
   }
 
   &__photo {
+    margin-left: 60px;
+    margin-top: 25px;
     grid-area: p;
-    height: 500px;
-    width: 500px;
+    height: 358px;
+    width: 360px;
     background: url(../img/museum_first_block.jpg) 0 0 no-repeat;
     border-radius: 50%;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -131,22 +134,22 @@
 
 .news {
   &__main-wrapper {
-    width: 1320px;
+    width: 1120px;
     margin: 0 auto;
     position: relative;
   }
 
   &__container {
-    width: 1220px;
+    width: 1000px;
     margin-top: 40px;
-    padding-top: 50px;
-    height: 690px;
-    background: url(../img/bg_desktop_slider.png) -110px 0 no-repeat;
+    padding-top: 20px;
+    height: 550px;
+    background: url(../img/bg_slider_desktop.png) -90px 0 no-repeat;
   }
 
   &__title {
     font-family: $montserrat-regular;
-    @include font_base(800, 38px, 1.21, #003268);
+    @include font_base(800, 35px, 1.23, #003268);
     text-align: center;
     padding-bottom: 30px;
   }
@@ -163,6 +166,7 @@
   width: 48px !important;
   border-radius: 50%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  z-index: 1 !important;
 }
 
 .swiper-button-prev:active,
@@ -212,7 +216,8 @@
   }
 
   &__article-title {
-    @include font_base(700, 22px, 1.36, #003268);
+    margin-top: 10px;
+    @include font_base(700, 17px, 1.2, #003268);
     padding-bottom: 15px;
   }
 
@@ -227,7 +232,7 @@
 
   &__data {
     font-family: $montserrat-regular;
-    @include font_base(500, 14px, 1.21, #979797);
+    @include font_base(500, 13px, 1.23, #979797);
     padding-bottom: 10px;
   }
 }

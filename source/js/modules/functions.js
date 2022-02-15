@@ -13,5 +13,6 @@ export function menuSwitch() {
       expositionMenu.classList.toggle('_active');
       expositionMobile.classList.toggle('_active');
     });
+
   }
 }

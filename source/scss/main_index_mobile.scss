@@ -120,7 +120,7 @@
       font-family: $open_sans_regular;
       @include font_base(400, 13px, 1.15, #003268);
       grid-area: fi;
-      text-align: center;
+      text-align: start;
     }
 
     &__filling-mobile {
@@ -223,7 +223,8 @@
       padding-bottom: 15px;
     }
 
-    .news__link:hover &__about-news {
+    .news__link:hover,
+    .news__link:link {
       color: #5A7FA7;
     }
 
