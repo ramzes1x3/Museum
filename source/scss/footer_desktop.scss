@@ -8,7 +8,6 @@
   position: relative;
 
   &__container {
-    @include font_base(400, 20px, 1.35, #F7F7F7);
     display: grid;
     padding: 15px 0;
     grid-template-areas:
@@ -79,6 +78,7 @@
   &__number {
     position: relative;
     padding-top: 20px;
+    @include font_base(400, 20px, 1.39, #FFFFFF);
 
     &::before {
       content: "";
@@ -104,13 +104,14 @@
 }
 
 .footer-menu {
+  @include font_base(400, 18px, 1.35, #F7F7F7);
   text-transform: uppercase;
   width: auto;
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: repeat(auto-fill, auto);
   align-self: center;
-  column-gap: 20px;
+  column-gap: 15px;
 
   &__item:not(:last-child) {
     position: relative;
@@ -119,7 +120,7 @@
       content: "";
       position: absolute;
       top: 0;
-      right: 30px;
+      right: 25px;
       width: 1px;
       height: 27px;
       background-color: #F7F7F7;
