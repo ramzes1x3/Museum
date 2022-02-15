@@ -3,6 +3,7 @@
 
 .page-main {
   margin-top: 100px;
+  background: #E5E5E5;
 }
 
 .main-menu {
@@ -81,7 +82,7 @@
     margin-top: 90px;
     padding: 50px 80px 70px 0;
     height: 710px;
-    background: url(../img/background_1.jpg) 0 0 no-repeat;
+    background: url(../img/background_1.png) 0 0 no-repeat;
     display: grid;
     grid-template-areas:
       "t p"
@@ -129,11 +130,18 @@
 }
 
 .news {
+  &__main-wrapper {
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+  }
+
   &__container {
+    width: 1220px;
     margin-top: 40px;
     padding-top: 50px;
     height: 690px;
-    background: url(../img/background_2.jpg) 0 0 no-repeat;
+    background: url(../img/bg_desktop_slider.png) -110px 0 no-repeat;
   }
 
   &__title {
@@ -147,8 +155,35 @@
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  color: #FF9F43;
+  display: none;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 48px !important;
+  border-radius: 50%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.swiper-button-prev:active,
+.swiper-button-next:active,
+.swiper-button-prev:focus,
+.swiper-button-next:focus {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.swiper-button-prev {
+  left: -10px !important;
+  background: url(../img/slider_prev.png) 0 0 no-repeat;
+}
+
+.swiper-button-next {
+  right: -10px !important;
+  background: url(../img/slider_next.png) 0 0 no-repeat;
+}
+
 
 .news-list {
 
@@ -184,6 +219,10 @@
   &__about-news {
     @include font_base(600, 14px, 1.36, #5A7FA7);
     padding-bottom: 15px;
+  }
+
+  .news__link:hover &__about-news {
+    color: #003268;
   }
 
   &__data {

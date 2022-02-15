@@ -4,6 +4,7 @@
 @media (max-width: 767.98px) {
   .page-main {
     margin-top: 75px;
+    background-color: #E5E5E5;
   }
 
   .main-menu {
@@ -81,13 +82,14 @@
 
   .about-museum {
     font-family: $montserrat-regular;
+    background-color: #E5E5E5;
 
     &__container {
       width: 310px;
       margin-top: 20px;
       padding: 0 5px;
       height: 490px;
-      background: url(../img/background_1_mobile.jpg) 0 75% no-repeat;
+      background: url(../img/background_1_mobile.png) 0 75% no-repeat;
       display: grid;
       grid-template-areas:
         "t t"
@@ -140,5 +142,99 @@
       box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
       justify-self: center;
     }
+  }
+
+  .news {
+    &__main-wrapper {
+      width: 320px;
+      height: 400px;
+      margin: 0 auto;
+      position: relative;
+      background: url(../img/bg_slider_mobile.png) 5px 10px no-repeat;
+    }
+
+    &__container {
+      margin-top: 20px;
+      margin-bottom: 40px;
+      padding-top: 0;
+      width: 250px;
+      height: 400px;
+    }
+
+    &__title {
+      font-family: $montserrat-regular;
+      padding-top: 30px;
+      @include font_base(1000, 16px, 1.25, #003268);
+      text-align: center;
+      padding-bottom: 15px;
+    }
+  }
+
+  .swiper-button-prev {
+    width: 28px !important;
+    height: 27px !important;
+    left: -10px !important;
+    background: url(../img/slider_prev_mobile.png) 0 0 no-repeat;
+    border-radius: 50%;
+  }
+
+  .swiper-button-next {
+    width: 28px !important;
+    height: 27px !important;
+    right: -10px !important;
+    background: url(../img/slider_next_mobile.png) 0 0 no-repeat;
+    border-radius: 50%;
+  }
+
+  .news-list {
+
+    .swiper-slide {
+      font-family: $open_sans_regular;
+      background-color: #FFFFFF;
+      padding: 6px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &__article {
+      display: grid;
+    }
+
+    &__article-title,
+    &__about-news,
+    &__data {
+      padding-left: 5px;
+    }
+
+    &__article-title {
+      @include font_base(700, 13px, 1.38, #003268);
+      padding-top: 10px;
+      padding-bottom: 15px;
+    }
+
+    &__about-news {
+      @include font_base(600, 10px, 1.4, #5A7FA7);
+      padding-bottom: 15px;
+    }
+
+    .news__link:hover &__about-news {
+      color: #5A7FA7;
+    }
+
+    &__data {
+      font-family: $montserrat-regular;
+      @include font_base(500, 12px, 1.2, #979797);
+      padding-bottom: 10px;
+    }
+  }
+
+  .swiper {
+    overflow: visible !important;
   }
 }
