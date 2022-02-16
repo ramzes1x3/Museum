@@ -32,10 +32,6 @@ body {
   line-height: 1;
 }
 
-body._lock {
-  overflow: hidden;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -425,6 +421,7 @@ button {
   column-gap: 50px;
 }
 .main-menu__item {
+  font-family: "OpenSans-Regular", Arial, sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.35;
@@ -435,6 +432,12 @@ button {
 .main-menu__text {
   display: grid;
   padding-top: 20px;
+}
+.main-menu__link:hover .main-menu__text {
+  opacity: 0.8;
+}
+.main-menu__link:active .main-menu__text {
+  opacity: 0.6;
 }
 .main-menu__link:hover .main-menu__wrapper {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
@@ -455,6 +458,7 @@ button {
   box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .main-menu__wrapper {
+  position: relative;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -467,16 +471,44 @@ button {
   background: linear-gradient(180deg, rgba(255, 180, 107, 0.6) 18.75%, rgba(255, 193, 133, 0) 100%);
 }
 
+.wrapper--news::after {
+  content: "";
+  width: 75px;
+  height: 67px;
+  background-image: url(../img/icon_news.svg);
+}
+
 .wrapper--about-museum {
   background: linear-gradient(180deg, rgba(255, 134, 18, 0.6) 15.62%, rgba(255, 159, 67, 0) 100%);
+}
+
+.wrapper--about-museum::after {
+  content: "";
+  width: 78px;
+  height: 81px;
+  background-image: url(../img/icon_about_museum.svg);
 }
 
 .wrapper--laba {
   background: linear-gradient(180deg, rgba(0, 78, 162, 0.6) 0%, rgba(0, 78, 162, 0) 100%);
 }
 
+.wrapper--laba::after {
+  content: "";
+  width: 77px;
+  height: 88px;
+  background-image: url(../img/icon_laba.svg);
+}
+
 .wrapper--chat-bot {
   background: linear-gradient(180deg, rgba(0, 50, 104, 0.6) 0%, rgba(0, 50, 104, 0) 100%);
+}
+
+.wrapper--chat-bot::after {
+  content: "";
+  width: 92px;
+  height: 79px;
+  background-image: url(../img/icon_chat_bot.svg);
 }
 
 .about-museum {
@@ -489,6 +521,12 @@ button {
   background: url(../img/background_1.png) 0 0 no-repeat;
   display: grid;
   grid-template-areas: "t p" "f p" "fi p" "t2 t2";
+}
+.about-museum__bold-text-desktop {
+  padding-left: 3px;
+}
+.about-museum__bold-text-mobile {
+  display: none;
 }
 .about-museum__title {
   font-weight: 500;
@@ -551,13 +589,12 @@ button {
   background: url(../img/bg_slider_desktop.png) -90px 0 no-repeat;
 }
 .news__title {
-  font-family: "Montserrat-regular", Arial, sans-serif;
-  font-weight: 800;
-  font-size: 35px;
-  line-height: 1.23;
-  color: #003268;
-  text-align: center;
+  display: grid;
+  justify-content: center;
   padding-bottom: 30px;
+}
+.news__title-mobile {
+  display: none;
 }
 
 .swiper-button-prev::after,
@@ -566,16 +603,16 @@ button {
   position: absolute !important;
   top: center;
   left: center;
-  width: 15px;
+  width: 18px;
   height: 27px;
 }
 
 .swiper-button-prev::after {
-  background: url(../img/slider_prev_arrow.svg) 0 0 no-repeat;
+  background: url(../img/slider_prev_arrow.svg) center no-repeat;
 }
 
 .swiper-button-next::after {
-  background: url(../img/slider_next_arrow.svg) 0 0 no-repeat;
+  background: url(../img/slider_next_arrow.svg) center no-repeat;
 }
 
 .swiper-button-prev,
@@ -639,7 +676,7 @@ button {
   font-size: 17px;
   line-height: 1.2;
   color: #003268;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 .news-list__about-news {
   font-weight: 600;
@@ -665,6 +702,10 @@ button {
 }
 
 @media (max-width: 767.98px) {
+  body._lock {
+    overflow: hidden;
+  }
+
   .page-main {
     margin-top: 75px;
     background-color: #E5E5E5;
@@ -676,6 +717,7 @@ button {
     grid-template-columns: repeat(auto-fit, minmax(137px, 1fr));
     grid-template-rows: repeat(auto-fill, auto);
     row-gap: 15px;
+    column-gap: 5px;
     justify-items: center;
     align-items: center;
     padding: 30px 0 30px 0;
@@ -691,6 +733,12 @@ button {
   .main-menu__text {
     display: grid;
     padding-top: 20px;
+  }
+  .main-menu__link:hover .main-menu__text {
+    opacity: 1;
+  }
+  .main-menu__link:active .main-menu__text {
+    opacity: 0.6;
   }
   .main-menu__link:hover .main-menu__wrapper {
     box-shadow: none;
@@ -731,6 +779,34 @@ button {
     border-radius: 50%;
   }
 
+  .wrapper--news::after {
+    content: "";
+    width: 65px;
+    height: 57px;
+    background-image: url(../img/icon_news_mobile.svg);
+  }
+
+  .wrapper--about-museum::after {
+    content: "";
+    width: 64px;
+    height: 66px;
+    background-image: url(../img/icon_about_museum_mobile.svg);
+  }
+
+  .wrapper--laba::after {
+    content: "";
+    width: 68px;
+    height: 71px;
+    background-image: url(../img/icon_laba_mobile.svg);
+  }
+
+  .wrapper--chat-bot::after {
+    content: "";
+    width: 66px;
+    height: 66px;
+    background-image: url(../img/icon_chat_bot_mobile.svg);
+  }
+
   .about-museum {
     font-family: "Montserrat-regular", Arial, sans-serif;
     background-color: #E5E5E5;
@@ -753,12 +829,19 @@ button {
     justify-self: center;
     text-align: center;
   }
-  .about-museum__bold-text {
-    font-weight: 800;
+  .about-museum__text-title {
+    display: grid;
+    font-weight: 700;
     font-size: 18px;
     line-height: 1.22;
     color: #003268;
-    text-transform: uppercase;
+    margin-top: 4px;
+  }
+  .about-museum__bold-text-desktop {
+    display: none;
+  }
+  .about-museum__bold-text-mobile {
+    display: grid;
   }
   .about-museum__feature {
     font-weight: 600;
@@ -787,18 +870,18 @@ button {
   .about-museum__photo {
     grid-area: p;
     height: 145px;
-    width: 145px;
-    background: url(../img/museum_first_block_mobile.jpg) 0 0 no-repeat;
+    width: 142px;
+    background: url(../img/museum_first_block_mobile.png) 0 0 no-repeat;
     border-radius: 50%;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
     justify-self: center;
     margin-right: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   .news__main-wrapper {
     width: 320px;
-    height: 400px;
+    height: 430px;
     margin: 0 auto;
     position: relative;
     background: url(../img/bg_slider_mobile.png) 5px 10px no-repeat;
@@ -808,17 +891,20 @@ button {
     margin-bottom: 40px;
     padding-top: 0;
     width: 250px;
-    height: 400px;
+    height: 430px;
+    background: none;
   }
   .news__title {
-    font-family: "Montserrat-regular", Arial, sans-serif;
-    padding-top: 30px;
-    font-weight: 1000;
-    font-size: 16px;
-    line-height: 1.25;
-    color: #003268;
-    text-align: center;
-    padding-bottom: 15px;
+    display: grid;
+    justify-content: center;
+    margin-top: 40px;
+    padding-bottom: 30px;
+  }
+  .news__title-desktop {
+    display: none;
+  }
+  .news__title-mobile {
+    display: grid;
   }
 
   .swiper-button-prev::after,
@@ -879,8 +965,8 @@ button {
     font-size: 13px;
     line-height: 1.38;
     color: #003268;
-    padding-top: 10px;
-    padding-bottom: 15px;
+    padding-top: 0px;
+    padding-bottom: 5px;
   }
   .news-list__about-news {
     font-weight: 600;
@@ -889,17 +975,16 @@ button {
     color: #5A7FA7;
     padding-bottom: 15px;
   }
-  .news-list .news__link:hover,
-.news-list .news__link:link {
+  .news__link:hover .news-list__about-news, .news__link:focus .news-list__about-news {
     color: #5A7FA7;
   }
   .news-list__data {
     font-family: "Montserrat-regular", Arial, sans-serif;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1.2;
     color: #979797;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
   }
 
   .swiper {
@@ -1001,8 +1086,9 @@ button {
 }
 
 .footer-menu {
+  font-family: "OpenSans-Regular", Arial, sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.35;
   color: #F7F7F7;
   text-transform: uppercase;

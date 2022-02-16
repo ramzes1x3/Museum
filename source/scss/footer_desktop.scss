@@ -104,7 +104,8 @@
 }
 
 .footer-menu {
-  @include font_base(400, 18px, 1.35, #F7F7F7);
+  font-family: $open_sans_regular;
+  @include font_base(400, 17px, 1.35, #F7F7F7);
   text-transform: uppercase;
   width: auto;
   display: grid;

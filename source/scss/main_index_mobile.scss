@@ -2,6 +2,11 @@
 @import "variables.scss";
 
 @media (max-width: 767.98px) {
+
+  body._lock {
+    overflow: hidden;
+  }
+
   .page-main {
     margin-top: 75px;
     background-color: #E5E5E5;
@@ -13,6 +18,7 @@
     grid-template-columns: repeat(auto-fit, minmax(137px, 1fr));
     grid-template-rows: repeat(auto-fill, auto);
     row-gap: 15px;
+    column-gap: 5px;
     justify-items: center;
     align-items: center;
     padding: 30px 0 30px 0;
@@ -26,6 +32,14 @@
     &__text {
       display: grid;
       padding-top: 20px;
+
+      .main-menu__link:hover & {
+        opacity: 1;
+      }
+
+      .main-menu__link:active & {
+        opacity: 0.6;
+      }
     }
 
     &__link {
@@ -80,6 +94,34 @@
     }
   }
 
+  .wrapper--news::after {
+    content: "";
+    width: 65px;
+    height: 57px;
+    background-image: url(../img/icon_news_mobile.svg);
+  }
+
+  .wrapper--about-museum::after {
+    content: "";
+    width: 64px;
+    height: 66px;
+    background-image: url(../img/icon_about_museum_mobile.svg);
+  }
+
+  .wrapper--laba::after {
+    content: "";
+    width: 68px;
+    height: 71px;
+    background-image: url(../img/icon_laba_mobile.svg);
+  }
+
+  .wrapper--chat-bot::after {
+    content: "";
+    width: 66px;
+    height: 66px;
+    background-image: url(../img/icon_chat_bot_mobile.svg);
+  }
+
   .about-museum {
     font-family: $montserrat-regular;
     background-color: #E5E5E5;
@@ -106,9 +148,18 @@
       text-align: center;
     }
 
-    &__bold-text {
-      @include font_base(800, 18px, 1.22, #003268);
-      text-transform: uppercase;
+    &__text-title {
+      display: grid;
+      @include font_base(700, 18px, 1.22, #003268);
+      margin-top: 4px;
+    }
+
+    &__bold-text-desktop {
+      display: none;
+    }
+
+    &__bold-text-mobile {
+      display: grid;
     }
 
     &__feature {
@@ -136,20 +187,20 @@
     &__photo {
       grid-area: p;
       height: 145px;
-      width: 145px;
-      background: url(../img/museum_first_block_mobile.jpg) 0 0 no-repeat;
+      width: 142px;
+      background: url(../img/museum_first_block_mobile.png) 0 0 no-repeat;
       border-radius: 50%;
       box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
       justify-self: center;
       margin-right: 40px;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
   }
 
   .news {
     &__main-wrapper {
       width: 320px;
-      height: 400px;
+      height: 430px;
       margin: 0 auto;
       position: relative;
       background: url(../img/bg_slider_mobile.png) 5px 10px no-repeat;
@@ -160,15 +211,23 @@
       margin-bottom: 40px;
       padding-top: 0;
       width: 250px;
-      height: 400px;
+      height: 430px;
+      background: none;
     }
 
     &__title {
-      font-family: $montserrat-regular;
-      padding-top: 30px;
-      @include font_base(1000, 16px, 1.25, #003268);
-      text-align: center;
-      padding-bottom: 15px;
+      display: grid;
+      justify-content: center;
+      margin-top: 40px;
+      padding-bottom: 30px;
+    }
+
+    &__title-desktop {
+      display: none;
+    }
+
+    &__title-mobile {
+      display: grid;
     }
   }
 
@@ -235,8 +294,8 @@
 
     &__article-title {
       @include font_base(700, 13px, 1.38, #003268);
-      padding-top: 10px;
-      padding-bottom: 15px;
+      padding-top: 0px;
+      padding-bottom: 5px;
     }
 
     &__about-news {
@@ -244,15 +303,15 @@
       padding-bottom: 15px;
     }
 
-    .news__link:hover,
-    .news__link:link {
+    .news__link:hover &__about-news,
+    .news__link:focus &__about-news {
       color: #5A7FA7;
     }
 
     &__data {
       font-family: $montserrat-regular;
-      @include font_base(500, 12px, 1.2, #979797);
-      padding-bottom: 10px;
+      @include font_base(500, 10px, 1.2, #979797);
+      padding-bottom: 5px;
     }
   }
 
