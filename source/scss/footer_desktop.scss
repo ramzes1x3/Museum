@@ -49,18 +49,19 @@
   }
 
   &__address {
+    font-family: $open_sans_regular;
     grid-area: a;
-    @include font_base(400, 14px, 1.36, #F7F7F7);
-    width: 320px;
+    @include font_base(400, 12px, 1.36, #F7F7F7);
+    width: 330px;
     margin-left: 22px;
     align-self: center;
     position: relative;
-    padding-top: 30px;
+    padding-top: 20px;
 
     &::before {
       content: "";
       position: absolute;
-      top: 35px;
+      top: 25px;
       left: -22px;
       background: url(../img/footer_address_icon.svg) center no-repeat;
       width: 17px;
@@ -69,6 +70,7 @@
   }
 
   &__contacts {
+    font-family: $open_sans_regular;
     grid-area: c;
     justify-self: end;
     align-self: center;
@@ -76,7 +78,9 @@
   }
 
   &__number {
+    font-family: $open_sans_regular;
     position: relative;
+    margin-top: 10px;
     padding-top: 20px;
     @include font_base(400, 20px, 1.39, #FFFFFF);
 
@@ -92,14 +96,17 @@
   }
 
   &__time {
+    padding-top: 8px;
+    font-family: $open_sans_regular;
     @include font_base(400, 18px, 1.39, #FFFFFF);
   }
 
   &__copyright {
+    font-family: $open_sans_regular;
     @include font_base(400, 12px, 1.33, #F7F7F7);
     justify-self: center;
     grid-area: copy;
-    padding-top: 8px;
+    margin-top: -6px;
   }
 }
 

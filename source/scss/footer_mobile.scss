@@ -53,6 +53,7 @@
     }
 
     &__address {
+      font-family: $open_sans_regular;
       grid-area: a;
       @include font_base(400, 14px, 1.36, #F7F7F7);
       width: 95%;
@@ -60,13 +61,13 @@
       align-self: center;
       position: relative;
       padding-top: 5px;
-      text-align: center;
+
 
       &::before {
         content: "";
         position: absolute;
         top: 5px;
-        left: -20px;
+        left: -25px;
         background: url(../img/footer_address_icon.svg) center no-repeat;
         width: 17px;
         height: 23px;
@@ -75,6 +76,7 @@
     }
 
     &__contacts {
+      font-family: $open_sans_regular;
       grid-area: c;
       justify-self: center;
       align-self: center;
@@ -82,6 +84,7 @@
     }
 
     &__number {
+      font-family: $open_sans_regular;
       position: relative;
       padding-top: 30px;
 
@@ -97,14 +100,16 @@
     }
 
     &__time {
+      font-family: $open_sans_regular;
       padding-top: 5px;
       padding-right: 20px;
       @include font_base(400, 14px, 1.39, #FFFFFF);
     }
 
     &__copyright {
+      font-family: $open_sans_regular;
       @include font_base(400, 12px, 1.33, #F7F7F7);
-      width: 220px;
+      width: 240px;
       justify-self: center;
       align-self: center;
       grid-area: copy;
