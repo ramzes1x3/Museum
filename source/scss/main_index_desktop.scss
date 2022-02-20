@@ -564,3 +564,101 @@
 
   &__text {}
 }
+
+.advanced-features {
+
+  &__container {
+    height: 580px;
+    display: grid;
+    background: url(../img/background_chat_bot_laba.png) 0 0 no-repeat;
+    background-size: cover;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__laba {
+    width: 483px;
+    padding: 0 65px;
+    position: relative;
+  }
+
+  &__laba-svg-desktop {
+    margin-top: 185px;
+    padding-bottom: 2px;
+    margin-bottom: 15px;
+  }
+
+  &__laba-svg-mobile {
+    display: none;
+  }
+
+  &__icon {
+    position: absolute;
+    width: 159px;
+    height: 159px;
+    background-color: #FFFFFF;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+  }
+
+  &__laba-icon {
+    background-image: url(../img/icon_laba_main.png);
+    top: 300px;
+    left: 230px;
+
+    &:hover {
+      background-color: #EDEDED;
+    }
+
+    &:active {
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &__laba-text {
+    font-family: $open_sans_regular;
+    @include font_base(600, 17px, 1.35, #003268);
+    padding-left: 15px;
+  }
+
+  &__chat-bot {
+    position: relative;
+    text-align: end;
+    padding: 0 80px;
+    padding-top: 290px;
+  }
+
+  &__chat-bot-icon {
+    padding-bottom: 2px;
+    margin-bottom: 15px;
+    background-image: url(../img/icon_chat_bot_main.png);
+
+    &:hover {
+      background-color: #EDEDED;
+    }
+
+    &:active {
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &__chat-bot-svg-mobile {
+    display: none;
+  }
+
+  &__chat-bot-text {
+    width: 370px;
+    text-align: normal;
+    font-family: $open_sans_regular;
+    @include font_base(600, 17px, 1.35, #003268);
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+
+  &__svg-chat-bot-desktop {
+    position: absolute;
+    top: 390px;
+    left: 80px;
+  }
+}
