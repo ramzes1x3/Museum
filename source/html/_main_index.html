@@ -320,4 +320,109 @@
       </div>
     </div>
   </section>
+  <section class="museum-contacts">
+    <div class="museum-contacts__container">
+      <div class="museum-contacts__text-block text-block">
+        <h3 class="text-block__title">
+          Будем рады видеть Вас в нашем музее!
+        </h3>
+        <p class="text-block__address">
+          <span class="text-block__bold-text">Адрес:</span>
+          347900, Россия, Ростовская обл., г. Таганрог, ул. Чехова 22, корп. «Б», 2-й подъезд.
+        </p>
+        <p class="text-block__time">
+          <span class="text-block__bold-text">Время работы:</span>
+          Пн-Пт: c 09:00-17:00
+        </p>
+        <p class="text-block__email">
+          <span class="text-block__bold-text">Email:</span>
+          museum@tti.sfedu.ru
+        </p>
+        <p class="text-block__number">
+          <span class="text-block__bold-text">Тел./факс:</span>
+          +7 8634 371461
+        </p>
+        <a href="#" class="text-block__link-vk">
+          <div class="text-block__icon-vk"></div>
+        </a>
+        <a href="#" class="text-block__link-sfedu">
+        <div class="text-block__icon-sfedu"></div>
+        </a>
+      </div>
+      <button type="button" class="museum-contacts__btn-form btn-form">
+        ЗАДАТЬ ВОПРОС
+      </button>
+    </div>
+    <div id="yandex-map" class="museum-contacts__map"></div>
+  </section>
+  <div class="wrapper-modal visually-hidden">
+    <section class="museum-contacts-form">
+      <button type="button" class="museum-contacts-form__close"></button>
+      <div class="museum-contacts-form__title">
+        НАПИШИТЕ НАМ
+      </div>
+      <div class="museum-contacts-form__text">
+        Заполните простую форму ниже (сообщение придет нам прямо на email главного клиент-сервиса) или свяжитесь с нами по контактам, которые видите на этой странице.
+      </div>
+      <form class="museum-contacts-form__question-form" name="user-questions" action="question-form" method="GET">
+        <p class="museum-contacts-form__user-name-block">
+          <label for="user-name-input" class="visually-hidden">Введите ваше имя</label>
+          <input type="text" class="museum-contacts-form__user-name" id="user-name-input" name="user-name"
+            placeholder="Ваше имя" required>
+        </p>
+        <p class="museum-contacts-form__user-email-block">
+          <label for="user-email-input" class="visually-hidden">Введите ваш email</label>
+          <input type="email" class="museum-contacts-form__user-email" id="user-email-input" name="user-email"
+            placeholder="Ваш email" required>
+        </p>
+        <p class="museum-contacts-form__user-question-block">
+          <label class="visually-hidden" for ="user-question-text">Ваш вопрос</label>
+          <textarea class="museum-contacts-form__user-question" id ="user-question-text" name ="user-question" rows ="6"
+              placeholder="Напишите Ваш вопрос"></textarea>
+        </p>
+        <p class="museum-contacts-form__submit-block">
+          <label for="question-submit-id" class="visually-hidden">Отправить вопрос</label>
+          <button id="question-submit-id" name="question-submit" class="museum-contacts-form__submit btn-form"
+            type="submit" value="Отправить вопрос" form="user-questions">Отправить</button>
+        </p>
+      </form>
+      <p class="museum-contacts-form__rules">
+        *Ваши данные никогда не будут переданы 3м лицам.
+      </p>
+    </section>
+  </div>
+  <section class="museum-contacts-mobile-form">
+    <button type="button" class="museum-contacts-mobile-form__close"></button>
+    <div class="museum-contacts-mobile-form__title">
+      Напишите нам
+    </div>
+    <div class="museum-contacts-mobile-form__text">
+      Заполните простую форму ниже (сообщение придет нам прямо на email главного клиент-сервиса) или свяжитесь с нами по контактам, которые видите на этой странице.
+    </div>
+    <form class="museum-contacts-mobile-form__question-form" name="user-questions-mobile" action="question-form" method="GET">
+      <p class="museum-contacts-mobile-form__user-name-block">
+        <label for="user-name-input" class="visually-hidden">Введите ваше имя</label>
+        <input type="text" class="museum-contacts-mobile-form__user-name" id="user-name-input-mobile" name="user-name"
+          placeholder="Ваше имя" required>
+      </p>
+      <p class="museum-contacts-mobile-form__user-email-block">
+        <label for="user-email-input" class="visually-hidden">Введите ваш email</label>
+        <input type="email" class="museum-contacts-mobile-form__user-email" id="user-email-input-mobile" name="user-email"
+          placeholder="Ваш email" required>
+      </p>
+      <p class="museum-contacts-mobile-form__user-question-block">
+        <label class="visually-hidden" for ="user-question-text">Ваш вопрос</label>
+        <textarea class="museum-contacts-mobile-form__user-question" id ="user-question-text-mobile" name ="user-question" rows ="6"
+            placeholder="Напишите Ваш вопрос"></textarea>
+      </p>
+      <p class="museum-contacts-mobile-form__submit-block">
+        <label for="question-submit-id" class="visually-hidden">Отправить вопрос</label>
+        <button id="question-submit-id-mobile" name="question-submit-mobile" class="museum-contacts-mobile-form__submit btn-form"
+          type="submit" value="Отправить вопрос" form="user-questions">Отправить</button>
+      </p>
+    </form>
+    <p class="museum-contacts-mobile-form__rules">
+      *Ваши данные никогда не будут переданы 3м лицам.
+    </p>
+  </section>
 </main>
