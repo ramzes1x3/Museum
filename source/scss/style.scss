@@ -42,6 +42,10 @@ button::-moz-focus-inner {
   border: 0;
 }
 
+textarea {
+  resize: none;
+}
+
 img {
   max-width: 100%;
   height: auto;

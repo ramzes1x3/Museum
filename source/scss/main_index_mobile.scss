@@ -96,15 +96,15 @@
 
   .wrapper--news::after {
     content: "";
-    width: 65px;
-    height: 57px;
+    width: 55px;
+    height: 51px;
     background-image: url(../img/icon_news_mobile.svg);
   }
 
   .wrapper--about-museum::after {
     content: "";
-    width: 64px;
-    height: 66px;
+    width: 58px;
+    height: 60px;
     background-image: url(../img/icon_about_museum_mobile.svg);
   }
 
@@ -185,9 +185,18 @@
 
     &__photo {
       grid-area: p;
-      height: 145px;
+      height: 143px;
       width: 142px;
       background: url(../img/museum_first_block_mobile.png) 0 0 no-repeat;
+      background-size: contain;
+
+      @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+        & {
+          background: url(../img/museum_first_block_mobile@2x.png) no-repeat;
+          background-size: contain;
+        }
+      }
+
       border-radius: 50%;
       box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
       justify-self: center;
@@ -345,9 +354,17 @@
 
     &__logo {
       position: absolute;
-      background: url(../img/logo_museum_history.svg) no-repeat;
+      background: url(../img/logo_museum_history.png) no-repeat;
+      background-size: 180px 158px;
       top: 220px;
       left: 128px;
+    }
+
+    @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+      &__logo {
+        background: url(../img/logo_museum_history@2x.png) no-repeat;
+        background-size: 180px 158px;
+      }
     }
 
     &__article {
@@ -475,8 +492,6 @@
     &__link:hover p {
       text-decoration: none;
     }
-
-    &__text {}
   }
 
   .advanced-features {
@@ -492,9 +507,10 @@
     }
 
     &__laba {
-      width: 220px;
-      padding: 0 25px;
+      width: 300px;
+      padding: 83px 25px 0 37px;
       position: relative;
+      display: block;
     }
 
     &__laba-svg-desktop {
@@ -502,11 +518,10 @@
     }
 
     &__laba-svg-mobile {
-      display: grid;
-      margin: 83px 0 0 15px;
+      display: inline-block;
     }
 
-    &__icon {
+    &__laba-link {
       position: absolute;
       width: 75px;
       height: 75px;
@@ -515,16 +530,7 @@
       background-repeat: no-repeat;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       border-radius: 50%;
-    }
-
-    &__laba-link {
-      display: block;
-      width: 75px;
-      height: 75px;
-    }
-
-    &__laba-icon {
-      background-image: url(../img/icon_laba_main_mobile.png);
+      background-image: url(../img/icon_laba_main_mobile.svg);
       top: 150px;
       left: 135px;
 
@@ -540,23 +546,34 @@
     &__laba-text {
       font-family: $open_sans_regular;
       @include font_base(600, 10px, 1.4, #003268);
-      padding-left: 15px;
-      margin-top: 8px;
-      width: 214px;
+      padding-left: 0;
+      margin-top: 2px;
+      width: auto;
+      display: block;
+      letter-spacing: 0;
     }
 
     &__chat-bot {
+      width: 300px;
+      display: block;
       position: relative;
       text-align: end;
       padding: 0;
-      padding-top: 55px;
       margin: 0;
     }
 
-    &__chat-bot-icon {
-      padding-bottom: 2px;
-      margin-bottom: 10px;
-      background-image: url(../img/icon_chat_bot_main-mobile.png);
+    &__chat-bot-link {
+      position: absolute;
+      width: 75px;
+      height: 75px;
+      background-color: #FFFFFF;
+      background-position: center center;
+      background-repeat: no-repeat;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 50%;
+      background-image: url(../img/icon_chat_bot_main-mobile.svg);
+      top: 115px;
+      left: 69px;
 
       &:hover {
         background-color: #ffffff;
@@ -568,18 +585,17 @@
     }
 
     &__chat-bot-text {
-      width: 210px;
+      width: auto;
       text-align: normal;
       font-family: $open_sans_regular;
       @include font_base(600, 10px, 1.4, #003268);
-      margin-left: 45px;
-      margin-top: 10px;
+      margin: 78px 43px 0 45px;
+      padding: 0;
+      letter-spacing: 0;
     }
 
     &__chat-bot-icon {
-      position: absolute;
-      top: 115px;
-      left: 69px;
+      display: none;
     }
 
     &__chat-bot-svg-desktop {
@@ -588,7 +604,10 @@
 
     &__chat-bot-svg-mobile {
       display: grid;
-      margin-left: 180px;
+      position: absolute;
+      top: 60px;
+      right: 45px;
+      margin-left: 0;
     }
   }
 
@@ -604,7 +623,7 @@
       height: 685px;
       width: 100vw;
       z-index: 0;
-      top: 128px;
+      top: 198px;
       left: 0;
     }
 
@@ -613,10 +632,6 @@
       width: 100vw;
       height: 685px;
     }
-
-    &__text-block {}
-
-    &__btn-form {}
   }
 
   .btn-form {
@@ -649,7 +664,7 @@
 
     &:after {
       position: absolute;
-      top: 245px;
+      top: 244px;
       left: 0;
       content: "";
       width: 100vw;
@@ -850,17 +865,18 @@
       justify-items: center;
     }
 
+    &__user-name.error,
+    &__user-email.error {
+      box-shadow: 0 0 15px red;
+    }
+
     &__user-name {
       height: 25px;
     }
 
-    &__user-email-block {}
-
     &__user-email {
       height: 25px;
     }
-
-    &__user-question-block {}
 
     &__user-question {
       height: 80px;
@@ -885,4 +901,9 @@
       @include font_base(400, 10px, 1.4, #828282);
     }
   }
+
+  .wrapper-modal {
+    display: none;
+  }
+
 }

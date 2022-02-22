@@ -2,6 +2,7 @@ var myMap;
 var placemark;
 
 export function init(){
+
   myMap = new ymaps.Map("yandex-map", {
       center: [47.20587137631812,38.93814957284925],
       zoom: 18,

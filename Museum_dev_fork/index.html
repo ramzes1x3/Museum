@@ -93,7 +93,7 @@
           </a>
         </li>
         <li class="header-menu__item">
-          <a href="#" class="header-menu__link">
+          <a href="#museum-contacts-section" class="header-menu__link">
             <span class="header-menu__contacts">Контакты</span>
           </a>
         </li>
@@ -138,13 +138,13 @@
   <div class="page-main__container">
     <ul class="page-main__main-menu main-menu">
       <li class="main-menu__item">
-        <a href="#" class="main-menu__link">
+        <a href="#news-section" class="main-menu__link">
           <div class="main-menu__wrapper wrapper--news"></div>
           <span class="main-menu__text">НОВОСТИ</span>
         </a>
       </li>
       <li class="main-menu__item">
-        <a href="#" class="main-menu__link">
+        <a href="#history-museum-section" class="main-menu__link">
           <div class="main-menu__wrapper wrapper--about-museum"></div>
           <span class="main-menu__text">О МУЗЕЕ</span>
         </a>
@@ -193,7 +193,7 @@
       <div class="about-museum__photo"></div>
     </div>
   </section>
-  <section class="news">
+  <section id="news-section" class="news">
     <div class="news__main-wrapper">
       <div class="news__container">
         <h2 class="news__title">
@@ -345,7 +345,7 @@
       </div>
     </div>
   </section>
-  <section class="history-museum">
+  <section id="history-museum-section" class="history-museum">
     <div class="history-museum__container">
       <div class="history-museum__logo"></div>
       <div class="history-museum__article">
@@ -456,7 +456,7 @@
       </div>
     </div>
   </section>
-  <section class="museum-contacts">
+  <section id="museum-contacts-section" class="museum-contacts">
     <div class="museum-contacts__container">
       <div class="museum-contacts__text-block text-block">
         <h3 class="text-block__title">
@@ -478,10 +478,10 @@
           <span class="text-block__bold-text">Тел./факс:</span>
           +7 8634 371461
         </p>
-        <a href="#" class="text-block__link-vk">
+        <a href="https://vk.com/id368810061" target="_blank" class="text-block__link-vk">
           <div class="text-block__icon-vk"></div>
         </a>
-        <a href="#" class="text-block__link-sfedu">
+        <a href="https://sfedu.ru/" target="_blank" class="text-block__link-sfedu">
         <div class="text-block__icon-sfedu"></div>
         </a>
       </div>
@@ -500,15 +500,15 @@
       <div class="museum-contacts-form__text">
         Заполните простую форму ниже (сообщение придет нам прямо на email главного клиент-сервиса) или свяжитесь с нами по контактам, которые видите на этой странице.
       </div>
-      <form class="museum-contacts-form__question-form" name="user-questions" action="question-form" method="GET">
+      <form method="#" id="question-form-desktop" class="museum-contacts-form__question-form" name="user-questions" action="question.php">
         <p class="museum-contacts-form__user-name-block">
           <label for="user-name-input" class="visually-hidden">Введите ваше имя</label>
-          <input type="text" class="museum-contacts-form__user-name" id="user-name-input" name="user-name"
+          <input type="text" class="museum-contacts-form__user-name req name" class="req" id="user-name-input" name="user-name"
             placeholder="Ваше имя" required>
         </p>
         <p class="museum-contacts-form__user-email-block">
           <label for="user-email-input" class="visually-hidden">Введите ваш email</label>
-          <input type="email" class="museum-contacts-form__user-email" id="user-email-input" name="user-email"
+          <input type="email" class="museum-contacts-form__user-email req email" id="user-email-input" name="user-email"
             placeholder="Ваш email" required>
         </p>
         <p class="museum-contacts-form__user-question-block">
@@ -517,9 +517,8 @@
               placeholder="Напишите Ваш вопрос"></textarea>
         </p>
         <p class="museum-contacts-form__submit-block">
-          <label for="question-submit-id" class="visually-hidden">Отправить вопрос</label>
-          <button id="question-submit-id" name="question-submit" class="museum-contacts-form__submit btn-form"
-            type="submit" value="Отправить вопрос" form="user-questions">Отправить</button>
+          <button type="submit" id="question-submit-id" class="museum-contacts-form__submit btn-form"
+            >Отправить</button>
         </p>
       </form>
       <p class="museum-contacts-form__rules">
@@ -535,15 +534,15 @@
     <div class="museum-contacts-mobile-form__text">
       Заполните простую форму ниже (сообщение придет нам прямо на email главного клиент-сервиса) или свяжитесь с нами по контактам, которые видите на этой странице.
     </div>
-    <form class="museum-contacts-mobile-form__question-form" name="user-questions-mobile" action="question-form" method="GET">
+    <form id="form-mobile-question" class="museum-contacts-mobile-form__question-form" name="user-questions-mobile" action="question-form" method="GET">
       <p class="museum-contacts-mobile-form__user-name-block">
         <label for="user-name-input" class="visually-hidden">Введите ваше имя</label>
-        <input type="text" class="museum-contacts-mobile-form__user-name" id="user-name-input-mobile" name="user-name"
+        <input type="text" class="museum-contacts-mobile-form__user-name req name" id="user-name-input-mobile" name="user-name"
           placeholder="Ваше имя" required>
       </p>
       <p class="museum-contacts-mobile-form__user-email-block">
         <label for="user-email-input" class="visually-hidden">Введите ваш email</label>
-        <input type="email" class="museum-contacts-mobile-form__user-email" id="user-email-input-mobile" name="user-email"
+        <input type="email" class="museum-contacts-mobile-form__user-email req email" id="user-email-input-mobile" name="user-email"
           placeholder="Ваш email" required>
       </p>
       <p class="museum-contacts-mobile-form__user-question-block">
@@ -553,8 +552,8 @@
       </p>
       <p class="museum-contacts-mobile-form__submit-block">
         <label for="question-submit-id" class="visually-hidden">Отправить вопрос</label>
-        <button id="question-submit-id-mobile" name="question-submit-mobile" class="museum-contacts-mobile-form__submit btn-form"
-          type="submit" value="Отправить вопрос" form="user-questions">Отправить</button>
+        <button id="question-submit-id-mobile" class="museum-contacts-mobile-form__submit btn-form"
+          type="submit" value="Отправить вопрос">Отправить</button>
       </p>
     </form>
     <p class="museum-contacts-mobile-form__rules">
@@ -567,10 +566,10 @@
   <div class="page-footer__container">
     <ul class="page-footer__menu footer-menu">
       <li class="footer-menu__item">
-        <a href="#" class="footer-menu__link">НОВОСТИ</a>
+        <a href="#news-section" class="footer-menu__link">НОВОСТИ</a>
       </li>
       <li class="footer-menu__item">
-        <a href="#" class="footer-menu__link">О МУЗЕЕ</a>
+        <a href="#history-museum-section" class="footer-menu__link">О МУЗЕЕ</a>
       </li>
       <li class="footer-menu__item">
         <a href="#" class="footer-menu__link">ЛАБОРАТОРИЯ</a>
@@ -580,12 +579,12 @@
       </li>
     </ul>
     <div class="page-footer__wrapper-icons">
-        <a href="#" class="page-footer__vk-link">
+        <a href="https://vk.com/id368810061" target="_blank" class="page-footer__vk-link">
           <svg class="page-footer__vk-icon" role='img'  focusable='false' width='58px' height='58px' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
             <use xlink:href='sprite/icons.svg#footer_icon_vk'></use>
           </svg>
         </a>
-        <a href="#" class="page-footer__sfedu-link">
+        <a href="https://sfedu.ru/" target="_blank" class="page-footer__sfedu-link">
           <picture><source srcset="img/footer_sfedu@2x.webp" type="image/webp"><img src="img/footer_sfedu@2x.png" alt="Логотип ЮФУ" class="page-footer__sfedu-icon" width="75px" height="70px"></picture>
         </a>
     </div>
