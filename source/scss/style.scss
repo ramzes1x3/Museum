@@ -8,13 +8,18 @@ body {
   line-height: 1;
 }
 
-body._lock {
-  overflow: hidden;
-}
-
 * {
   margin: 0;
   padding: 0;
+}
+
+*:hover,
+*:active,
+*:focus {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 
 *,
@@ -26,6 +31,19 @@ body._lock {
 button {
   font-family: inherit;
   border: none;
+}
+
+button:active,
+button:focus {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+textarea {
+  resize: none;
 }
 
 img {
@@ -61,7 +79,7 @@ button {
 }
 
 [class*="__container"] {
-  width: 1340px;
+  width: 1120px;
   margin: 0px auto;
   padding: 0px 10px;
   overflow: hidden;

@@ -1,5 +1,13 @@
 import * as flsFunction from "./modules/finder_webp.js";
-import * as functions from "./modules/functions.js";
+import * as functions from "./modules/switch_menu.js";
+import * as swiper from "./modules/swiper.js";
+import * as yandexMap from "./modules/yandex_map_api.js";
+import * as switchPopup from "./modules/toggle_popup_questions.js";
+import * as validForm from "./modules/valid_form_desktop.js";
+import * as validFormMobile from "./modules/valid_form_mobile.js";
 
 flsFunction.isWebp();
-functions.menuSwitch();
+ymaps.ready(yandexMap.init);
+switchPopup.togglePopup();
+validForm.checkValid();
+validFormMobile.checkValid();

@@ -6,13 +6,13 @@
   height: 100px;
   position: fixed;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+  background-color: #fff;
   z-index: 5;
 
   &__container {
     display: grid;
-    grid-template-columns: 94px 500px 1fr 1fr;
+    grid-template-columns: 81px 420px 1fr 1fr;
     grid-template-rows: 100px;
-    background-color: #fff;
     align-items: center;
     overflow: visible;
   }
@@ -28,7 +28,7 @@
   }
 
   &__link-museum {
-    margin-left: 20px;
+    margin-left: 15px;
 
     &:hover {
       opacity: 0.8;
@@ -41,16 +41,16 @@
 
   &__header-menu {
     font-family: $open_sans_regular;
-    @include font_base(400, 18px, 1.39, #014080);
+    @include font_base(400, 17px, 1.35, #014080);
     text-transform: uppercase;
   }
 
   &__sign-up {
     font-family: $open_sans_bold;
-    @include font_base(700, 20px, 1.35, #ffffff);
+    @include font_base(700, 17px, 1.35, #ffffff);
     text-transform: uppercase;
-    width: 280px;
-    height: 45px;
+    width: 203px;
+    height: 34px;
     justify-self: end;
     background-color: #FF9F43;
     border-radius: 35px;
@@ -127,7 +127,7 @@
 
 .list-exposition._active {
   font-family: $open_sans_bold;
-  @include font_base(700, 20px, 1.35, #002B59);
+  @include font_base(700, 17px, 1.35, #002B59);
   text-transform: none;
   max-height: 500px;
   position: absolute;
@@ -135,7 +135,7 @@
   grid-template-columns: 100%;
   grid-template-rows: repeat(auto-fit, auto);
   left: 0;
-  top: 63px;
+  top: 61.5px;
   background-color: #fff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   overflow-y: auto;
@@ -166,7 +166,7 @@
     grid-template-columns: 90px 1fr;
     column-gap: 20px;
     align-items: center;
-    width: 528px;
+    width: 494px;
     padding: 10px 30px;
     text-align: center;
 
