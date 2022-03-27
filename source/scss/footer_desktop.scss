@@ -3,22 +3,24 @@
 
 .page-footer {
   width: 100%;
-  height: 200px;
+  height: 325px;
   background-color: #003268;
   position: relative;
 
   &__container {
     display: grid;
     padding: 15px 0;
-    grid-template-areas:
-      "m i"
-      "a c"
-      "copy copy";
+    grid-template-columns: 100%;
+    color: #ffffff;
   }
 
+  &__wrapper-menu-block {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-bottom: 45px;
+  }
 
   &__wrapper-icons {
-    grid-area: i;
     align-self: center;
     justify-self: end;
   }
@@ -48,65 +50,62 @@
     background-color: #F7F7F7;
   }
 
+  &__wrapper-contact-block {
+    display: grid;
+    font-family: $open_sans_regular;
+    line-height: 1.35;
+    font-size: 16px;
+    grid-template-columns: 50% 50%;
+  }
+
+  &__title,
+  &__address,
+  &__number,
+  &__email {
+    margin-bottom: 10px;
+  }
+
   &__address {
-    font-family: $open_sans_regular;
-    grid-area: a;
-    @include font_base(400, 12px, 1.36, #F7F7F7);
-    width: 330px;
-    margin-left: 22px;
-    align-self: center;
-    position: relative;
-    padding-top: 20px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 25px;
-      left: -22px;
-      background: url(../img/footer_address_icon.svg) center no-repeat;
-      width: 17px;
-      height: 23px;
-    }
+    width: 430px;
   }
 
-  &__contacts {
-    font-family: $open_sans_regular;
-    grid-area: c;
+  &__visit {
+    width: 400px;
+    grid-column: 2;
+    grid-row: 1/4;
     justify-self: end;
-    align-self: center;
-    text-align: end;
-  }
-
-  &__number {
-    font-family: $open_sans_regular;
-    position: relative;
-    margin-top: 10px;
-    padding-top: 20px;
-    @include font_base(400, 20px, 1.39, #FFFFFF);
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 25px;
-      left: 23px;
-      background: url(../img/footer_mobile.svg) center no-repeat;
-      width: 23px;
-      height: 20px;
-    }
-  }
-
-  &__time {
-    padding-top: 8px;
-    font-family: $open_sans_regular;
-    @include font_base(400, 18px, 1.39, #FFFFFF);
+    text-align: right;
+    font-size: 16px;
+    line-height: 1.35;
   }
 
   &__copyright {
     font-family: $open_sans_regular;
     @include font_base(400, 12px, 1.33, #F7F7F7);
     justify-self: center;
-    grid-area: copy;
-    margin-top: -6px;
+    margin-top: 20px;
+    grid-column: 1 / 3;
+  }
+}
+
+.btn-form {
+  width: 168px;
+  height: 40px;
+  background-color: #11549C;
+  font-family: $open_sans_bold;
+  @include font_base(600, 16px, 1.33, #FFFFFF);
+  border-radius: 10px;
+  justify-self: end;
+  margin-top: -50px;
+
+  &:hover {
+    background-color: #3e3da5;
+    box-shadow: 0px 4px 4px #094280, 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+  }
+
+  &:active {
+    box-shadow: inset 0px 4px 4px #094280, 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
 

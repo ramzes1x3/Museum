@@ -1,0 +1,162 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+.museum-contacts-mobile-form {
+  display: none;
+}
+
+
+.museum-contacts-form {
+  padding: 70px 50px;
+  text-align: center;
+  position: relative;
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  &__title {
+    text-align: center;
+    font-family: $open_sans_bold;
+    @include font_base(700, 19px, 1.33, #003268);
+  }
+
+  &__text {
+    font-family: $open_sans_regular;
+    @include font_base(400, 15px, 1.35, #000000)
+  }
+
+  &__title,
+  &__text,
+  &__user-name-block,
+  &__user-email-block,
+  &__user-question-block,
+  &__submit-block {
+    margin-bottom: 25px;
+  }
+
+  &__user-name,
+  &__user-email,
+  &__user-question {
+    font-family: $open_sans_regular;
+    @include font_base(400, 17px, 1.35, #828282);
+    padding: 10px 10px;
+    width: 450px;
+    background-color: #EBEBEB;
+    border: 1px solid #D5D5D5;
+    outline-offset: 0;
+    outline: 0;
+
+    &:active,
+    &:hover,
+    &:focus {
+      background-color: #EBEBEB;
+      border-bottom: 1px solid #000000;
+      border-top: 1px solid #000000;
+      border-left: 1px solid #000000;
+      border-right: 1px solid #000000;
+    }
+
+    &:focus {
+      color: #000000;
+      background-color: #fff;
+    }
+  }
+
+  &__question-form {
+    background-color: #fff;
+    border: 1px dotted #000000;
+    padding: 40px 40px 10px 40px;
+  }
+
+  &__user-name {
+    height: 45px;
+  }
+
+  &__user-email {
+    height: 45px;
+  }
+
+  &__user-name.error,
+  &__user-email.error {
+    box-shadow: 0 0 15px red;
+  }
+
+  &__user-question {
+    height: 150px;
+  }
+
+  &__submit-block {
+    margin-bottom: 30px;
+  }
+
+  &__submit {
+    width: 203px;
+    height: 45px;
+    top: 0;
+    left: 0;
+    position: relative;
+  }
+
+  &__rules {
+    font-family: $open_sans_regular;
+    font-style: italic;
+    @include font_base(400, 13px, 1.35, #828282);
+  }
+
+  &__wrapper-img {
+    padding-top: 20px;
+    width: 400px;
+  }
+
+  &__text {
+    padding: 20px 0 0 0;
+  }
+
+  &__wrapper-form {
+    display: grid;
+    justify-items: center;
+  }
+
+  &__title {}
+
+  &__title-desktop {}
+}
+
+:focus::-webkit-input-placeholder {
+  color: transparent
+}
+
+:focus::-moz-placeholder {
+  color: transparent
+}
+
+:focus:-moz-placeholder {
+  color: transparent
+}
+
+:focus:-ms-input-placeholder {
+  color: transparent
+}
+
+.btn-form-1 {
+  width: 243px;
+  height: 45px;
+  background-color: #2ecc71;
+  font-family: OpenSans-Bold, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.33;
+  color: #fff;
+  -webkit-box-shadow: 0 4px 4px #289735, 0 4px 4px rgba(0, 0, 0, .25);
+  box-shadow: 0 4px 4px #289735, 0 4px 4px rgba(0, 0, 0, .25);
+  border-radius: 4px
+}
+
+.btn-form-1:hover {
+  background-color: #289735;
+  cursor: pointer
+}
+
+.btn-form-1:active {
+  -webkit-box-shadow: inset 0 4px 4px rgba(0, 0, 0, .25);
+  box-shadow: inset 0 4px 4px rgba(0, 0, 0, .25)
+}
