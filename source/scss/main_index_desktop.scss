@@ -632,6 +632,14 @@
   &__image {
     margin-left: 80px;
   }
+
+  &__image--mobile{
+    display: none;
+  }
+
+  &__title--mobile{
+    display:  none;
+  }
 }
 
 .advanced-features {

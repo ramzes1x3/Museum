@@ -122,7 +122,8 @@
     display: none;
   }
 
-  .list-exposition-mobile._active {
+  .list-exposition-mobile._active,
+  .list-events-mobile._active {
     font-family: $open_sans_bold;
     @include font_base(700, 12px, 1.33, #002B59);
     text-transform: none;
@@ -138,7 +139,8 @@
     overflow-y: auto;
   }
 
-  .list-exposition-mobile {
+  .list-exposition-mobile,
+  .list-events-mobile {
     display: none;
 
     &__item {
