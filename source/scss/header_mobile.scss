@@ -125,7 +125,7 @@
   .list-exposition-mobile._active,
   .list-events-mobile._active {
     font-family: $open_sans_bold;
-    @include font_base(700, 12px, 1.33, #002B59);
+    @include font_base(700, 13px, 1.33, #002B59);
     text-transform: none;
     position: relative;
     max-height: 100vh;
