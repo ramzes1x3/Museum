@@ -3,13 +3,16 @@
 
 @media (max-width: 767.98px) {
 
+  body{
+    height: 70%;
+  }
   .museum-contacts-form{
     display: none;
   }
 
   .museum-contacts-mobile-form {
     width: 100vw;
-    height: 425px;
+    height: 415px;
     margin: 0 auto;
     padding: 20px 30px;
     background-color: #FFFFFF;
