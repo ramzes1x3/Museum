@@ -114,7 +114,8 @@
     display: grid;
   }
 
-  .item--expostion-mobile._active {
+  .item--expostion-mobile._active,
+  .item--event-mobile._active {
     background-color: #FFE5CC;
   }
 

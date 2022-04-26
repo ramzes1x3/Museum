@@ -17,6 +17,11 @@ export const menuSwitchMobile = () =>{
   expositionMobile.classList.toggle('_active');
   itemMobile.classList.toggle('_active');
   pageBody.classList.toggle('_lock');
+
+  if(itemEventMobile.classList.contains('_active')){
+    eventsMobile.classList.toggle('_active');
+    itemEventMobile.classList.toggle('_active');
+  }
 }
 
 hamburger.addEventListener('click', e => {
@@ -31,6 +36,11 @@ export const menuSwitchEvent = () =>{
   eventsMobile.classList.toggle('_active');
   itemEventMobile.classList.toggle('_active');
   pageBody.classList.toggle('_lock');
+
+  if(itemMobile.classList.contains('_active')){
+    expositionMobile.classList.toggle('_active');
+    itemMobile.classList.toggle('_active');
+  }
 }
 
 switchEvent.addEventListener('click', e =>{
