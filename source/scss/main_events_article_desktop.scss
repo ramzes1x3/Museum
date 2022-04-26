@@ -1,0 +1,115 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+
+.main-events-article {
+  padding: 50px;
+  background-color: #fff;
+  margin-bottom: 50px;
+
+  &__main-article {
+  }
+}
+.article-event {
+  display: grid;
+  grid-template-columns: 40% 60%;
+
+  &__title {
+    display: block;
+    @include font_base(800, 32px, 1.35, #003268);
+    font-family: $open_sans_bold;
+    margin-bottom: 50px;
+    grid-column: 1 / 3;
+
+  }
+
+  &__info {
+    @include font_base(800, 32px, 1.35, #003268);
+    font-family: $open_sans_bold;
+  }
+
+  &__date {
+    position: relative;
+    padding-left: 47px;
+    margin-bottom: 10px;
+
+    &::before{
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 0;
+      width: 32px;
+      height: 32px;
+      background: url(../img/events_article_icon_date.svg) 0 no-repeat;
+    }
+  }
+
+  &__time {
+    position: relative;
+    padding-left: 45px;
+    margin-bottom: 40px;
+    &::before{
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 28px;
+      height: 28px;
+      background: url(../img/events_article_icon_time.svg) 0 no-repeat;
+    }
+  }
+
+  &__btn-join {
+      font-family: $open_sans_bold;
+      @include font_base(700, 17px, 1.35, #ffffff);
+      text-transform: uppercase;
+      width: 203px;
+      height: 34px;
+      justify-self: end;
+      background-color: #FF9F43;
+      border-radius: 35px;
+      padding: 9px 23px;
+
+      &:hover {
+        cursor: pointer;
+        box-shadow: 1px 3px 10px 3px #a86527;
+      }
+
+      &:active {
+        cursor: pointer;
+        box-shadow: inset 1px 1px 10px 1px #a86527;
+      }
+  }
+
+  &__photo {
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    font-family: $open_sans_regular;
+    @include font_base(400, 17px, 1.35, #000000);
+    margin-bottom: 30px;
+    text-indent: 20px;
+    text-align: justify;
+    grid-column: 1 / 3;
+  }
+
+  &__link {
+    @include font_base(700, 17px, 1.35, #ffffff);
+    font-family: $open_sans_regular;
+    background-color: #878b8e;
+    border-radius: 10px;
+    padding: 7px 23px;
+    justify-self: end;
+    margin-right: 10px;
+
+    &:hover{
+      opacity: 0.8;
+    }
+
+    &:active{
+      opacity: 0.6;
+    }
+    grid-column: 1 / 3;
+  }
+}
