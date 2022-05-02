@@ -3,7 +3,8 @@
 
 @media (max-width: 767.98px) {
 
-  body._lock {
+  body._lock,
+  body._lock1 {
     overflow: hidden;
   }
 
@@ -382,7 +383,12 @@
       position: relative;
     }
 
-    &__logo {
+    &__logo{
+      display: none;
+    }
+
+    &__logo-mobile {
+      display: inline-block;
       position: absolute;
       background: url(../img/logo_museum_history.png) no-repeat;
       background-size: 180px 158px;
@@ -391,9 +397,12 @@
     }
 
     @media all and (-webkit-min-device-pixel-ratio: 1.5) {
-      &__logo {
+      &__logo-mobile {
+        display: inline-block;
         background: url(../img/logo_museum_history@2x.png) no-repeat;
         background-size: 180px 158px;
+        width: 160px;
+        height: 158px;
       }
     }
 

@@ -1,0 +1,68 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+.pagination-list-expo {
+  display: grid;
+  grid-template-columns: repeat(5, 31px);
+  align-items: center;
+  column-gap: 20px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  padding-bottom: 60px;
+
+  &__item {
+    @include font_base(400, 22px, 1.35, #002B59);
+    font-family: $open_sans_regular;
+
+    &:hover{
+      background-color: #F6D0AC;
+      border-radius: 100%;
+      cursor: pointer;
+    }
+    &:first-child:hover,
+    &:last-child:hover{
+      background-color: transparent;
+      opacity: 0.7;
+    }
+  }
+}
+
+.pagination-list-expo__item+._active{
+  background-color: #F6D0AC;
+  border-radius: 100%;
+}
+
+@media (max-width: 767.98px){
+  .pagination-list-expo {
+    display: grid;
+    grid-template-columns: repeat(5, 31px);
+    align-items: center;
+    column-gap: 20px;
+    justify-content: center;
+    padding-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 0;
+
+    &__item {
+      @include font_base(400, 22px, 1.35, #002B59);
+      font-family: $open_sans_regular;
+
+      &:hover{
+        background-color: #F6D0AC;
+        border-radius: 100%;
+        cursor: pointer;
+      }
+      &:first-child:hover,
+      &:last-child:hover{
+        background-color: transparent;
+        opacity: 0.7;
+      }
+    }
+
+    .pagination-list-expo__item+._active{
+      background-color: #F6D0AC;
+      border-radius: 100%;
+    }
+  }
+}

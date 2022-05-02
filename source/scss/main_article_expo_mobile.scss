@@ -1,0 +1,129 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+@media (max-width: 767.98px) {
+  .page-main-article-expo{
+    background: none;
+    background-color: #EDEDED;
+    width: 300px;
+  }
+
+  .page-main {
+
+    &__container {
+    }
+  }
+
+  .main-article-expo {
+  }
+
+  .wrraper-about{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(auto-fill, auto);
+    @include font_base(400, 14px, 1.35, #000000);
+    font-family: $open_sans_regular;
+    margin-top: 50px;
+    row-gap: 30px;
+    width: 300px;
+
+    &__bold-text {
+      display: grid;
+      @include font_base(700, 14px, 1.35, #000000);
+      font-family: $open_sans_bold;
+      grid-column: 1 / 1;
+      width: 300px;
+      margin-bottom: -25px;
+    }
+
+    &__bold-text--date {
+      grid-row: 1 / 1;
+    }
+
+    &__date{
+      width: 300px;
+      grid-row: 2 / 2;
+    }
+
+    &__bold-text--category{
+      grid-row: 3 / 3;
+    }
+
+    &__category {
+      grid-row: 4 / 4;
+    }
+
+    &__bold-text--description{
+      grid-row: 5 / 5;
+    }
+
+    &__description {
+      grid-row: 6 / 6;
+    }
+
+    &__bold-text--history{
+      grid-row: 7 / 7;
+    }
+
+    &__history {
+      grid-row: 8 / 8;
+    }
+  }
+
+  .article-expo {
+    display: grid;
+    grid-template-columns: 300px;
+
+    &__title {
+      @include font_base(700, 18px, 1.35, #000000);
+      font-family: $open_sans_bold;
+      text-align: center;
+      margin-top: 25px;
+      margin-left: 0;
+      width: 300px;
+    }
+
+    &__title-wrraper{
+      grid-template-rows: repeat(2, auto);
+      justify-items: center;
+      text-align: center;
+      grid-column: 1 / 1;
+      grid-row: 1 / 1;
+      padding-top: 0;
+      width: 300px;
+      height: 300px;
+      background: url(../img/bg_mobile_expo.png) no-repeat 0 0;
+    }
+
+    &__wrapper-expo-article-photo{
+      display: grid;
+      justify-items: center;
+      margin-top: 70px;
+    }
+
+    &__photo{
+      width: 220px;
+      height: 140px;
+    }
+
+    &__link-back {
+      display: grid;
+      @include font_base(600, 16px, 1.35, #ffffff);
+      font-family: $open_sans_regular;
+      background-color: #878b8e;
+      border-radius: 10px;
+      padding: 7px 23px;
+      justify-self: start;
+      margin-top: 40px;
+      margin-bottom: 40px;
+
+      &:hover{
+        opacity: 0.8;
+      }
+
+      &:active{
+        opacity: 0.6;
+      }
+    }
+  }
+}
