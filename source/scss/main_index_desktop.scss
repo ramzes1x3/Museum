@@ -469,9 +469,14 @@
   }
 
   &__logo {
+    display: block;
     width: 347px;
     height: 434px;
     background: url(../img/history_logo_desktop.svg) -80px -30px no-repeat;
+  }
+
+  &__logo-mobile{
+    display: none;
   }
 
   &__article {

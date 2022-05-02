@@ -6,7 +6,7 @@
   justify-items: center;
   background-color: #fff;
   margin-bottom: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 0;
 
   &__main-title {
     padding-top: 50px;
@@ -29,6 +29,7 @@
   grid-template-columns: 390px 390px;
   column-gap: 60px;
   row-gap: 50px;
+  margin-bottom: 20px;
 
   &__item {
     display: grid;

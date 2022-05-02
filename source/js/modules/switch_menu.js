@@ -2,7 +2,6 @@ let hamburger = document.querySelector('.link--exposition');
 let expositionDesktop = document.querySelector('.list-exposition');
 let expositionMobile = document.querySelector('.list-exposition-mobile');
 let itemMobile = document.querySelector('.item--expostion-mobile');
-
 let switchEvent = document.querySelector('.link--event-mobile');
 let eventsMobile = document.querySelector('.list-events-mobile');
 let itemEventMobile = document.querySelector('.item--event-mobile');
@@ -17,6 +16,10 @@ export const menuSwitchMobile = () =>{
   expositionMobile.classList.toggle('_active');
   itemMobile.classList.toggle('_active');
   pageBody.classList.toggle('_lock');
+
+  if(pageBody.classList.contains('_lock1')){
+    pageBody.classList.toggle('_lock1');
+  }
 
   if(itemEventMobile.classList.contains('_active')){
     eventsMobile.classList.toggle('_active');
@@ -35,7 +38,11 @@ hamburger.addEventListener('click', e => {
 export const menuSwitchEvent = () =>{
   eventsMobile.classList.toggle('_active');
   itemEventMobile.classList.toggle('_active');
-  pageBody.classList.toggle('_lock');
+  pageBody.classList.toggle('_lock1');
+
+  if(pageBody.classList.contains('_lock')){
+    pageBody.classList.toggle('_lock');
+  }
 
   if(itemMobile.classList.contains('_active')){
     expositionMobile.classList.toggle('_active');
