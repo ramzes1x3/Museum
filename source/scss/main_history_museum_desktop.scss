@@ -9,65 +9,127 @@
 		}
 }
 .main-history-museum {
-    background-color: #fff;
-    padding: 50px;
-    margin-bottom: 70px;
-    @include font_base(700, 18px, 1.35, #003268);
-    font-family: $open_sans_bold;
-    display: grid;
-    justify-items: center;
+
+		&__wrraper-first-block {
+      background-color: #fff;
+      padding: 50px 40px;
+      padding-bottom: 30px;
+      text-align: center;
+      margin-bottom: 50px;
+		}
 
 		&__title {
-      margin-bottom: 50px;
 		}
 
-		&__visual-1 {
-      margin-bottom: 50px;
+		&__title-desktop {
+      display: inline-block;
 		}
 
-		&__text-1 {
-      margin-bottom: 10px;
+		&__title-mobile {
+      display: none;
 		}
 
-		&__text-2 {
-      margin-bottom: 10px;
+		&__wrraper-photo-1 {
 		}
 
-		&__text-3 {
-      margin-bottom: 50px;
+		&__photo {
 		}
 
-		&__visual-2 {
+		&__text-block-1 {
+      margin-top: -25px;
+		}
+
+		&__paragraph {
+      @include font_base(400, 17px, 1.35, #000000);
+      font-family: $open_sans_regular;
+      text-align: justify;
+      text-indent: 25px;
+      margin-bottom: 15px;
+		}
+
+		&__text-block-2 {
+      display: grid;
+      grid-template-columns: 40% 50%;
+      column-gap: 60px;
       margin-bottom: 70px;
 		}
 
-		&__list {
-      display: grid;
-      grid-template-columns: repeat(3, 270px);
-      justify-content: center;
+    &__photo-expo-desktop{
+      display: block;
+    }
+
+    &__photo-expo-mobile{
+      display: none;
+    }
+
+		&__wrraper-photo-2 {
 		}
 
-		&__item {
-      justify-self: center;
-      text-align: center;
+		&__text-1 {
+      @include font_base(500, 18px, 1.70, #003268);
+      font-family: $open_sans_regular;
+      padding-top: 30px;
+      text-align: justify;
 		}
 
-		&__item-icon {
-		}
-
-		&__numbers {
-      @include font_base(7800, 22px, 1.35, #003268);
-      font-family: $open_sans_bold;
-		}
-
-		&__item-text {
-      @include font_base(700, 16px, 1.35, #00326899);
-      font-family: $open_sans_bold;
-		}
-
-		&__visual-3 {
+		&__wrraper-text-block-3 {
       margin-top: 80px;
-      margin-bottom: 20px;
+      background: url(../img/bg_history_block-3.png) 0 0 no-repeat;
+      position: relative;
+      margin-bottom: 60px;
+      min-height: 420px;
+      z-index: 1;
+		}
+
+    &__wrraper-photo-3{
+      margin-left: 75px;
+      padding-top: 55px;
+    }
+
+		&__photo-2 {
+		}
+
+		&__text-3 {
+      position: absolute;
+      top: 120px;
+      left: 345px;
+      background-color: #fff;
+      @include font_base(400, 17px, 1.70, #000000);
+      font-family: $open_sans_regular;
+      text-align: justify;
+      padding: 30px;
+      padding-left: 80px;
+      width: 810px;
+      padding-right: 80px;
+      z-index: -1;
+		}
+
+		&__wrraper-text-block-4 {
+      background-color: #fff;
+      padding: 40px 40px;
+      margin-bottom: 70px;
+		}
+
+		&__photo-4 {
+      margin-bottom: 50px;
 		}
 }
+.exposition-main {
 
+		&__list {
+		}
+}
+.exposition-list-main-page {
+
+		&__item {
+		}
+
+		&__link {
+		}
+
+		&__svg {
+		}
+
+		&__text {
+		}
+}
