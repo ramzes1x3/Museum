@@ -3621,6 +3621,9 @@ body._lock1 {
   background-color: transparent;
   opacity: 0.7;
 }
+.pagination-list-expo__item:first-child, .pagination-list-expo__item:last-child {
+  padding-top: 8px;
+}
 
 .pagination-list-expo__item + ._active {
   background-color: #F6D0AC;
@@ -3858,5 +3861,439 @@ body._lock1 {
   }
   .article-expo__link-back:active {
     opacity: 0.6;
+  }
+}
+.page-main__container-event-form {
+  background-color: #fff;
+  margin-bottom: 70px;
+  padding: 50px;
+}
+
+.events-form {
+  text-align: center;
+}
+.events-form__title {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 1.35;
+  color: #003268;
+  font-family: "Montserrat-regular", Arial, sans-serif;
+  margin-bottom: 25px;
+}
+.events-form__alert {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.35;
+  color: #000000;
+  font-family: "OpenSans-Regular", Arial, sans-serif;
+  width: 1000px;
+  height: 135px;
+  padding: 20px;
+  padding-left: 100px;
+  background-color: #D4E9FF;
+  text-align: start;
+  position: relative;
+  margin-bottom: 50px;
+}
+.events-form__alert::before {
+  content: "i";
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 1.35;
+  color: #fff;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 21px;
+  left: 35px;
+  height: 40px;
+  width: 40px;
+  background-color: #959595;
+  border-radius: 50%;
+}
+
+.wrraper-form {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.wrraper-form__calendar-link {
+  height: 300px;
+  margin-top: 50px;
+}
+.wrraper-form__calendar-link:hover {
+  opacity: 0.8;
+}
+.wrraper-form__link-text {
+  margin-top: 35px;
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #002B59;
+  position: relative;
+}
+.wrraper-form__link-text::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: 75px;
+  width: 32px;
+  height: 32px;
+  background: url(../img/form_arrow.svg) 0 0 no-repeat;
+}
+
+.event-registration-form {
+  text-align: center;
+  position: relative;
+  display: grid;
+  grid-template-columns: 100%;
+  justify-items: left;
+}
+.event-registration-form__title {
+  text-align: center;
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1.33;
+  color: #003268;
+}
+.event-registration-form__text {
+  font-family: "OpenSans-Regular", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.35;
+  color: #000000;
+}
+.event-registration-form__title, .event-registration-form__text, .event-registration-form__user-name-block, .event-registration-form__user-email-block, .event-registration-form__user-question-block, .event-registration-form__submit-block, .event-registration-form__date-block, .event-registration-form__user-about-block {
+  margin-bottom: 25px;
+}
+.event-registration-form__user-name, .event-registration-form__user-email, .event-registration-form__user-question {
+  font-family: "OpenSans-Regular", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.35;
+  color: #828282;
+  padding: 10px 10px;
+  width: 525px;
+  background-color: #EBEBEB;
+  border: 1px solid #D5D5D5;
+  outline-offset: 0;
+  outline: 0;
+}
+.event-registration-form__user-name:active, .event-registration-form__user-name:hover, .event-registration-form__user-name:focus, .event-registration-form__user-email:active, .event-registration-form__user-email:hover, .event-registration-form__user-email:focus, .event-registration-form__user-question:active, .event-registration-form__user-question:hover, .event-registration-form__user-question:focus {
+  background-color: #EBEBEB;
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid #000000;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+.event-registration-form__user-name:focus, .event-registration-form__user-email:focus, .event-registration-form__user-question:focus {
+  color: #000000;
+  background-color: #fff;
+}
+.event-registration-form__user-name {
+  height: 45px;
+}
+.event-registration-form__user-email {
+  height: 45px;
+}
+.event-registration-form__user-name.error, .event-registration-form__user-email.error {
+  box-shadow: 0 0 15px red;
+}
+.event-registration-form__user-question {
+  height: 300px;
+}
+.event-registration-form__submit-block {
+  margin-bottom: 30px;
+}
+.event-registration-form__submit {
+  width: 203px;
+  height: 45px;
+  top: 0;
+  left: 0;
+  position: relative;
+}
+.event-registration-form__rules {
+  font-family: "OpenSans-Regular", Arial, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.35;
+  color: #828282;
+  margin-bottom: 50px;
+}
+.event-registration-form__wrapper-img {
+  padding-top: 20px;
+  width: 400px;
+}
+.event-registration-form__text {
+  padding: 20px 0 0 0;
+}
+.event-registration-form__wrapper-form {
+  display: grid;
+  justify-items: center;
+}
+:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+:focus::-moz-placeholder {
+  color: transparent;
+}
+
+:focus:-moz-placeholder {
+  color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.btn-form-1 {
+  width: 190px;
+  height: 45px;
+  background-color: #2ecc71;
+  font-family: OpenSans-Bold, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.33;
+  color: #fff;
+  -webkit-box-shadow: 0 4px 4px #289735, 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px #289735, 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+.btn-form-1:hover {
+  background-color: #289735;
+  cursor: pointer;
+}
+
+.btn-form-1:active {
+  -webkit-box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 767.98px) {
+  .page-main__container-event-form {
+    background-color: #fff;
+    margin-bottom: 0;
+    padding: 20px 0;
+  }
+
+  .events-form {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+  }
+  .events-form__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.35;
+    color: #003268;
+    font-family: "Montserrat-regular", Arial, sans-serif;
+    margin-bottom: 20px;
+    width: 280px;
+  }
+  .events-form__alert {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.35;
+    color: #000000;
+    font-family: "OpenSans-Regular", Arial, sans-serif;
+    width: 300px;
+    min-height: 152px;
+    padding: 10px;
+    padding-left: 37px;
+    background-color: #D4E9FF;
+    text-align: start;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  .events-form__alert::before {
+    content: "i";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.35;
+    color: #fff;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 12px;
+    left: 7px;
+    height: 21px;
+    width: 21px;
+    background-color: #959595;
+    border-radius: 50%;
+  }
+
+  .wrraper-form {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .wrraper-form__calendar-link {
+    height: 300px;
+    margin-top: 10px;
+    grid-row: 1/1;
+  }
+  .wrraper-form__calendar-link:hover {
+    opacity: 0.8;
+  }
+  .wrraper-form__calendar-picture {
+    width: 241px;
+    height: 211px;
+  }
+  .wrraper-form__link-text {
+    margin-top: 25px;
+    font-family: "OpenSans-Bold", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.33;
+    color: #002B59;
+    position: relative;
+    margin-right: 26px;
+  }
+  .wrraper-form__link-text::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: -32px;
+    width: 32px;
+    height: 32px;
+    background: url(../img/form_arrow_mobile.svg) 0 0 no-repeat;
+  }
+
+  .event-registration-form {
+    text-align: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: center;
+  }
+  .event-registration-form__title {
+    text-align: center;
+    font-family: "OpenSans-Bold", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 1.33;
+    color: #003268;
+  }
+  .event-registration-form__text {
+    font-family: "OpenSans-Regular", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.35;
+    color: #000000;
+  }
+  .event-registration-form__title, .event-registration-form__text, .event-registration-form__user-name-block, .event-registration-form__user-email-block, .event-registration-form__user-question-block, .event-registration-form__submit-block, .event-registration-form__date-block, .event-registration-form__user-about-block {
+    margin-bottom: 15px;
+  }
+  .event-registration-form__user-name, .event-registration-form__user-email, .event-registration-form__user-question {
+    font-family: "OpenSans-Regular", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.35;
+    color: #828282;
+    padding: 5px 5px;
+    width: 250px;
+    background-color: #EBEBEB;
+    border: 1px solid #D5D5D5;
+    outline-offset: 0;
+    outline: 0;
+  }
+  .event-registration-form__user-name:active, .event-registration-form__user-name:hover, .event-registration-form__user-name:focus, .event-registration-form__user-email:active, .event-registration-form__user-email:hover, .event-registration-form__user-email:focus, .event-registration-form__user-question:active, .event-registration-form__user-question:hover, .event-registration-form__user-question:focus {
+    background-color: #EBEBEB;
+    border-bottom: 1px solid #000000;
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+  }
+  .event-registration-form__user-name:focus, .event-registration-form__user-email:focus, .event-registration-form__user-question:focus {
+    color: #000000;
+    background-color: #fff;
+  }
+  .event-registration-form__user-name {
+    height: 30px;
+  }
+  .event-registration-form__user-email {
+    height: 30px;
+  }
+  .event-registration-form__user-name.error, .event-registration-form__user-email.error {
+    box-shadow: 0 0 15px red;
+  }
+  .event-registration-form__user-question {
+    height: 105px;
+  }
+  .event-registration-form__submit-block {
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  .event-registration-form__submit {
+    width: 203px;
+    height: 45px;
+    top: 0;
+    left: 0;
+    position: relative;
+  }
+  .event-registration-form__rules {
+    font-family: "OpenSans-Regular", Arial, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.35;
+    color: #828282;
+    margin-bottom: 20px;
+    grid-row: 6/6;
+  }
+  .event-registration-form__wrapper-img {
+    padding-top: 20px;
+    width: 400px;
+  }
+  .event-registration-form__text {
+    padding: 20px 0 0 0;
+  }
+  .event-registration-form__wrapper-form {
+    display: grid;
+    justify-items: center;
+  }
+  :focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+  :focus::-moz-placeholder {
+    color: transparent;
+  }
+
+  :focus:-moz-placeholder {
+    color: transparent;
+  }
+
+  :focus:-ms-input-placeholder {
+    color: transparent;
+  }
+
+  .btn-form-1 {
+    width: 127px;
+    height: 30px;
+    background-color: #2ecc71;
+    font-family: OpenSans-Bold, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.33;
+    color: #fff;
+    -webkit-box-shadow: 0 4px 4px #289735, 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px #289735, 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+  }
+
+  .btn-form-1:hover {
+    background-color: #289735;
+    cursor: pointer;
+  }
+
+  .btn-form-1:active {
+    -webkit-box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
   }
 }

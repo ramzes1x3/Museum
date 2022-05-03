@@ -1,0 +1,47 @@
+<main class="page-main">
+  <div class="page-main__container page-main__container-event-form">
+    <section class="events-form">
+      <h1 class="events-form__title">Запишитесь на мероприятие или экскурсию!</h1>
+      <div class="events-form__alert">
+        Заполните простую форму и мы свяжемся с Вами для уточнения информации. Название мероприятия или предпочтительное время для экскурсии, организацию, которую Вы представляете, количество человек, курс (для студентов) и дополнительную информацию укажите в свободном формате в КОММЕНТАРИИ.
+      </div>
+      <div class="events-form__wrraper wrraper-form">
+        <form method="post" action="question.php" id="events-registration-desktop" class="event-registration-form" name="event-registration">
+          <p class="event-registration-form__user-name-block">
+            <label for="user-name-input" class="visually-hidden">Ваше имя</label>
+            <input type="text" class="event-registration-form__user-name req name" class="req" id="user-name-input" name="name"
+              placeholder="Ваше имя" required>
+          </p>
+          <p class="event-registration-form__user-email-block">
+            <label for="user-email-input" class="visually-hidden">Ваш email</label>
+            <input type="email" class="event-registration-form__user-email req email" id="user-email-input" name="email"
+              placeholder="Ваш email" required>
+          </p>
+          <p class="event-registration-form__date-block">
+            <label for="date-event" class="visually-hidden">Дата проведения</label>
+            <input type="text" class="event-registration-form__user-email req email" id="date-event" name="date"
+              placeholder="Дата проведения" required>
+          </p>
+          <p class="event-registration-form__user-about-block">
+            <label class="visually-hidden" for ="user-about-text">Комментарий</label>
+            <textarea class="event-registration-form__user-question" id ="user-about-text" name ="about" rows ="6"
+                placeholder="Комментарий"></textarea>
+          </p>
+          <p class="event-registration-form__rules">
+            *Ваши данные никогда не будут переданы 3м лицам.
+          </p>
+          <p class="event-registration-form__submit-block">
+            <button type="submit" id="registration-submit-id" class="event-registration-form__submit btn-form-1"
+              >ЗАПИСАТЬСЯ</button>
+          </p>
+        </form>
+        <a href="events.html" class="wrraper-form__calendar-link">
+          <div class="wrraper-form__picture">
+            <img src="@img/picture_calendar_form.png" alt="Картинка календаря" class="wrraper-form__calendar-picture">
+          </div>
+          <p class="wrraper-form__link-text">КАЛЕНДАРЬ МЕРОПРИЯТИЙ</p>
+        </a>
+      </div>
+    </section>
+  </div>
+</main>

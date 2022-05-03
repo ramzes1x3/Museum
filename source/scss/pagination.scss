@@ -25,6 +25,11 @@
       background-color: transparent;
       opacity: 0.7;
     }
+
+    &:first-child,
+    &:last-child{
+      padding-top: 8px;
+    }
   }
 }
 
