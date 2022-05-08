@@ -615,8 +615,6 @@
     grid-template-rows: 50% 22% 20%;
   }
 
-  &__title-desktop {}
-
   &__link-calendar a,
   &__link-registration a {
     @include font_base(600, 17px, 1.35, #ffffff);
@@ -821,6 +819,7 @@
   &__email {
     grid-area: e;
     padding-left: 60px;
+    padding-top: 10px;
   }
 
   &__number {

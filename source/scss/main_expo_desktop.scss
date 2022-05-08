@@ -61,13 +61,12 @@
   }
 
   &__wrapper-photo {
+    display: grid;
+    justify-items: center;
     width: 255px;
     height: 200px;
     background-color: #EDEDED;
     margin-bottom: 9px;
-  }
-
-  &__photo {
   }
 
   &__title {
