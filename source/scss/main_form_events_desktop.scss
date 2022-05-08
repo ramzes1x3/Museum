@@ -13,6 +13,8 @@
   text-align: center;
 
   &__title {
+    display: grid;
+    justify-items: center;
     @include font_base(900, 30px, 1.35, #003268);
     font-family: $montserrat-regular;
     margin-bottom: 25px;
@@ -44,6 +46,15 @@
       background-color: #959595;
       border-radius: 50%;
     }
+  }
+
+  &__title-desktop{
+    display: block;
+  }
+
+  &__title-mobile{
+    margin-bottom: 20px;
+    display: none;
   }
 }
 

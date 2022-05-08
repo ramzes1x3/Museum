@@ -103,7 +103,7 @@ button {
 }
 
 [class*=__container] {
-  width: 1120px;
+  width: 1140px;
   margin: 0px auto;
   padding: 0px 10px;
   overflow: hidden;
@@ -2428,7 +2428,7 @@ body._lock1 {
   line-height: 1.35;
   color: #000000;
 }
-.museum-contacts-form__title, .museum-contacts-form__text, .museum-contacts-form__user-name-block, .museum-contacts-form__user-email-block, .museum-contacts-form__user-question-block, .museum-contacts-form__submit-block {
+.museum-contacts-form__text, .museum-contacts-form__user-name-block, .museum-contacts-form__user-email-block, .museum-contacts-form__user-question-block, .museum-contacts-form__submit-block {
   margin-bottom: 25px;
 }
 .museum-contacts-form__user-name, .museum-contacts-form__user-email, .museum-contacts-form__user-question {
@@ -2459,6 +2459,7 @@ body._lock1 {
   background-color: #fff;
   border: 1px dotted #000000;
   padding: 40px 40px 10px 40px;
+  margin-top: -20px;
 }
 .museum-contacts-form__user-name {
   height: 45px;
@@ -2489,9 +2490,10 @@ body._lock1 {
   font-size: 13px;
   line-height: 1.35;
   color: #828282;
+  padding-top: 20px;
 }
 .museum-contacts-form__wrapper-img {
-  padding-top: 20px;
+  margin-top: 70px;
   width: 400px;
 }
 .museum-contacts-form__text {
@@ -2705,7 +2707,7 @@ body._lock1 {
   width: 1030px;
   padding: 25px 0 25px 0;
   display: grid;
-  grid-template-columns: 250px 780px;
+  grid-template-columns: 250px 741px;
   grid-template-rows: 80px 60px 20px;
   column-gap: 40px;
   border-bottom: 2px solid #C7C7C7;
@@ -2737,6 +2739,7 @@ body._lock1 {
   line-height: 1.35;
   color: #000000;
   font-family: "OpenSans-Regular", Arial, sans-serif;
+  text-align: justify;
 }
 .list-news__data {
   grid-column: 2;
@@ -2991,12 +2994,6 @@ body._lock1 {
   text-align: center;
   margin-bottom: 50px;
 }
-.list-events__title:hover {
-  opacity: 0.8;
-}
-.list-events__title:active {
-  opacity: 0.6;
-}
 .list-events__link {
   font-weight: 600;
   font-size: 16px;
@@ -3017,10 +3014,16 @@ body._lock1 {
   background: url(../img/main_events_arrow.svg) 0 no-repeat;
 }
 .list-events__link:hover {
+  cursor: pointer;
+}
+.list-events__link-item {
+  display: grid;
+}
+.list-events__link-item:hover {
   opacity: 0.8;
 }
-.list-events__link:active {
-  opacity: 0.6;
+.list-events__link-item:active {
+  opacity: 0.7;
 }
 
 @media (max-width: 767.98px) {
@@ -3488,17 +3491,23 @@ body._lock1 {
   .main-history-museum__wrraper-text-block-3 {
     display: grid;
     justify-items: center;
-    margin-top: 25px;
-    background: url(../img/bg_history_block-3-mobile.png) 35px 15px no-repeat;
+    margin-top: 0;
     position: relative;
+    background: none;
     margin-bottom: 40px;
     z-index: 1;
+  }
+  .main-history-museum__wrraper-photo-3-mobile {
+    display: grid;
+    justify-items: center;
+    width: 300px;
+    background: url(../img/bg_history_block-3-mobile.png) 0 0 no-repeat;
+    min-height: 300px;
   }
   .main-history-museum__wrraper-photo-3 {
     margin-top: 50px;
     margin-left: 0;
     padding-top: 0;
-    min-height: 300px;
   }
   .main-history-museum__photo-expo-desktop {
     display: none;
@@ -3521,7 +3530,7 @@ body._lock1 {
     padding-left: 20px;
     width: 300px;
     padding-right: 20px;
-    margin-top: -50px;
+    margin-top: -15px;
     z-index: 1;
   }
   .main-history-museum__wrraper-text-block-4 {
@@ -4008,6 +4017,8 @@ body._lock1 {
   text-align: center;
 }
 .events-form__title {
+  display: grid;
+  justify-items: center;
   font-weight: 900;
   font-size: 30px;
   line-height: 1.35;
@@ -4046,6 +4057,13 @@ body._lock1 {
   width: 40px;
   background-color: #959595;
   border-radius: 50%;
+}
+.events-form__title-desktop {
+  display: block;
+}
+.events-form__title-mobile {
+  margin-bottom: 20px;
+  display: none;
 }
 
 .wrraper-form {
@@ -4213,7 +4231,8 @@ body._lock1 {
   .page-main__container-event-form {
     background-color: #fff;
     margin-bottom: 0;
-    padding: 20px 0;
+    padding: 0;
+    padding-bottom: 20px;
   }
 
   .events-form {
@@ -4261,6 +4280,12 @@ body._lock1 {
     width: 21px;
     background-color: #959595;
     border-radius: 50%;
+  }
+  .events-form__title-desktop {
+    display: none;
+  }
+  .events-form__title-mobile {
+    display: block;
   }
 
   .wrraper-form {
