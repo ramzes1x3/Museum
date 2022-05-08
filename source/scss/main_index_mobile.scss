@@ -973,8 +973,6 @@
       grid-template-columns: 50% 50%;
     }
 
-    &__title-desktop {}
-
     &__link-calendar ,
     &__link-registration{
       margin-top: -12px;
@@ -1005,7 +1003,7 @@
       display: inherit;
       justify-items: center;
       width: 100%;
-      background: url(../img/bg_mobile_events.png)  center 0 no-repeat;
+      background: url(../img/img_events_bg.png)  center 0 no-repeat;
       padding-top: 20px;
       padding-bottom: 0;
       grid-column: 1 / 3;

@@ -73,9 +73,6 @@
       }
     }
 
-    &__picture {
-    }
-
     &__calendar-picture {
       width: 241px;
       height: 211px;
@@ -208,10 +205,6 @@
       display: grid;
       justify-items: center;
     }
-
-    &__title {}
-
-    &__title-desktop {}
   }
 
   :focus::-webkit-input-placeholder {
