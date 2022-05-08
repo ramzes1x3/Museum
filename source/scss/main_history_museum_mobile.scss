@@ -2,13 +2,7 @@
 @import "variables.scss";
 
 @media (max-width: 767.98px) {
-  .page-main {
-  }
-  .history {
 
-      &__container {
-      }
-  }
   .main-history-museum {
     &__wrraper-first-block {
       display: grid;
@@ -18,9 +12,6 @@
       padding-bottom: 20px;
       text-align: center;
       margin-bottom: 40px;
-    }
-
-    &__title {
     }
 
     &__title-desktop {
@@ -35,9 +26,6 @@
     &__wrraper-photo-1 {
       width: 300px;
       margin-bottom: 20px;
-    }
-
-    &__photo {
     }
 
     &__text-block-1 {
@@ -97,9 +85,6 @@
       margin-top: 50px;
       margin-left: 0;
       padding-top: 0;
-    }
-
-    &__photo-2 {
     }
 
     &__photo-expo-desktop{

@@ -70,12 +70,6 @@
     }
   }
 
-  &__picture {
-  }
-
-  &__calendar-picture {
-  }
-
   &__link-text {
     margin-top: 35px;
     font-family: $open_sans_bold;
@@ -200,10 +194,6 @@
     display: grid;
     justify-items: center;
   }
-
-  &__title {}
-
-  &__title-desktop {}
 }
 
 :focus::-webkit-input-placeholder {

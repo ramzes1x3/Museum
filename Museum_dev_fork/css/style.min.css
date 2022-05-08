@@ -2136,7 +2136,7 @@ body._lock1 {
     display: inherit;
     justify-items: center;
     width: 100%;
-    background: url(../img/bg_mobile_events.png) center 0 no-repeat;
+    background: url(../img/img_events_bg.png) center 0 no-repeat;
     padding-top: 20px;
     padding-bottom: 0;
     grid-column: 1/3;
@@ -3708,36 +3708,6 @@ body._lock1 {
     color: #5A7FA7;
     font-family: "OpenSans-Regular", Arial, sans-serif;
   }
-
-  .pagination-list-expo {
-    display: grid;
-    grid-template-columns: repeat(5, 31px);
-    align-items: center;
-    column-gap: 20px;
-    justify-content: center;
-    margin-bottom: 70px;
-  }
-  .pagination-list-expo__item {
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 1.35;
-    color: #002B59;
-    font-family: "OpenSans-Regular", Arial, sans-serif;
-  }
-  .pagination-list-expo__item:hover {
-    background-color: #F6D0AC;
-    border-radius: 100%;
-    cursor: pointer;
-  }
-  .pagination-list-expo__item:first-child:hover, .pagination-list-expo__item:last-child:hover {
-    background-color: transparent;
-    opacity: 0.7;
-  }
-
-  .pagination-list-expo__item + ._active {
-    background-color: #F6D0AC;
-    border-radius: 100%;
-  }
 }
 .pagination-list-expo {
   display: grid;
@@ -4187,6 +4157,7 @@ body._lock1 {
   display: grid;
   justify-items: center;
 }
+
 :focus::-webkit-input-placeholder {
   color: transparent;
 }
@@ -4417,6 +4388,7 @@ body._lock1 {
     display: grid;
     justify-items: center;
   }
+
   :focus::-webkit-input-placeholder {
     color: transparent;
   }

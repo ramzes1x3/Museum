@@ -71,9 +71,6 @@
       margin-bottom: 9px;
     }
 
-    &__photo {
-    }
-
     &__title {
       padding-left: 10px;
       margin-bottom: 5px;
@@ -86,35 +83,5 @@
       @include font_base(600, 12px, 1.35, #5A7FA7);
       font-family: $open_sans_regular;
     }
-  }
-
-  .pagination-list-expo {
-    display: grid;
-    grid-template-columns: repeat(5, 31px);
-    align-items: center;
-    column-gap: 20px;
-    justify-content: center;
-    margin-bottom: 70px;
-
-    &__item {
-      @include font_base(400, 22px, 1.35, #002B59);
-      font-family: $open_sans_regular;
-
-      &:hover{
-        background-color: #F6D0AC;
-        border-radius: 100%;
-        cursor: pointer;
-      }
-      &:first-child:hover,
-      &:last-child:hover{
-        background-color: transparent;
-        opacity: 0.7;
-      }
-    }
-  }
-
-  .pagination-list-expo__item+._active{
-    background-color: #F6D0AC;
-    border-radius: 100%;
   }
 }

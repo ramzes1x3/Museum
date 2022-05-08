@@ -1,13 +1,6 @@
 @import "mixins.scss";
 @import "variables.scss";
 
-.page-main {
-}
-.history {
-
-		&__container {
-		}
-}
 .main-history-museum {
 
 		&__wrraper-first-block {
@@ -18,21 +11,12 @@
       margin-bottom: 50px;
 		}
 
-		&__title {
-		}
-
 		&__title-desktop {
       display: inline-block;
 		}
 
 		&__title-mobile {
       display: none;
-		}
-
-		&__wrraper-photo-1 {
-		}
-
-		&__photo {
 		}
 
 		&__text-block-1 {
@@ -62,9 +46,6 @@
       display: none;
     }
 
-		&__wrraper-photo-2 {
-		}
-
 		&__text-1 {
       @include font_base(500, 18px, 1.70, #003268);
       font-family: $open_sans_regular;
@@ -85,9 +66,6 @@
       margin-left: 75px;
       padding-top: 55px;
     }
-
-		&__photo-2 {
-		}
 
 		&__text-3 {
       position: absolute;
@@ -112,24 +90,5 @@
 
 		&__photo-4 {
       margin-bottom: 50px;
-		}
-}
-.exposition-main {
-
-		&__list {
-		}
-}
-.exposition-list-main-page {
-
-		&__item {
-		}
-
-		&__link {
-		}
-
-		&__svg {
-		}
-
-		&__text {
 		}
 }
