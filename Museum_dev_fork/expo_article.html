@@ -12,6 +12,7 @@
           href="fonts/OpenSans-Regular.woff2" crossorigin>
         <link rel="preload" as="font" type="font/woff2"
           href="fonts/OpenSans-Bold.woff2" crossorigin>
+        <script type="module" src="js/modules/events_ref_link.js"></script>
     </head>
     <body class="page__body">
         <div class="page-wrapper">
@@ -165,7 +166,7 @@
           <span class="wrraper-about__bold-text wrraper-about__bold-text--history">История:</span>
           <p class="article-expo__history">Произведен в СССР Ленинградским заводом «Радиоприбор». Цена на дату производства (1965 г.) - 73 р. 34 к. </p>
         </div>
-        <a href="index.html" class="article-expo__link-back">НАЗАД</a>
+        <a href="#" id="ref_link_expo" class="article-expo__link-back">НАЗАД</a>
       </article>
     </section>
   </div>
@@ -202,7 +203,7 @@
     <span class="page-footer__line"></span>
     <div class="page-footer__wrapper-contact-block">
       <p class="page-footer__title">КОНТАКТНАЯ ИНФОРМАЦИЯ:</p>
-      <p class="page-footer__address">Адрес: 347900, Россия, Ростовская обл., г. Таганрог, ул. Чехова, 22, корп. «Б», 2-й подъезд</p>
+      <p class="page-footer__address">Адрес: 347900, Россия, Ростовская обл.,<br> г. Таганрог, ул. Чехова, 22, корп. «Б», 2-й подъезд</p>
       <p class="page-footer__number">Телефон: +7 (863) 437-14-61</p>
       <p class="page-footer__email">Email: museum@tti.sfedu.ru</p>
       <p class="page-footer__visit">Посещение музея возможно только по предварительной записи.</p>
@@ -228,5 +229,5 @@
 
         </div>
     </body>
-    <script src="js/app.min.js"></script>
+    <script type="module" src="js/app.js"></script>
 </html>

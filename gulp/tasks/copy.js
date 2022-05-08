@@ -14,3 +14,8 @@ export const copySvg = () => {
   .pipe(app.gulp.dest(app.path.build.svg))
 }
 
+ export const copyJs = () => {
+   return app.gulp.src(`${app.path.src.srcFold}/js/**/*.js`)
+   .pipe(app.gulp.dest(`${app.path.build.js}`))
+ }
+

@@ -24,7 +24,6 @@
     @include font_base(400, 15px, 1.35, #000000)
   }
 
-  &__title,
   &__text,
   &__user-name-block,
   &__user-email-block,
@@ -65,6 +64,7 @@
     background-color: #fff;
     border: 1px dotted #000000;
     padding: 40px 40px 10px 40px;
+    margin-top: -20px;
   }
 
   &__user-name {
@@ -100,10 +100,11 @@
     font-family: $open_sans_regular;
     font-style: italic;
     @include font_base(400, 13px, 1.35, #828282);
+    padding-top: 20px;
   }
 
   &__wrapper-img {
-    padding-top: 20px;
+    margin-top: 70px;
     width: 400px;
   }
 

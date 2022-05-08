@@ -57,14 +57,6 @@
     font-family: $open_sans_bold;
     text-align: center;
     margin-bottom: 50px;
-
-    &:hover{
-      opacity: 0.8;
-    }
-
-    &:active{
-      opacity: 0.6;
-    }
   }
 
   &__link {
@@ -85,11 +77,19 @@
     }
 
     &:hover{
+      cursor: pointer;
+    }
+  }
+
+  &__link-item{
+    display: grid;
+
+    &:hover{
       opacity: 0.8;
     }
 
     &:active{
-      opacity: 0.6;
+      opacity: 0.7;
     }
   }
 }
