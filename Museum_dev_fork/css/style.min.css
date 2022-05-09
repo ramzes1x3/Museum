@@ -1381,7 +1381,7 @@ body._lock1 {
 }
 @media (max-width: 767.98px) and (-webkit-min-device-pixel-ratio: 1.5) {
   .about-museum__photo {
-    background: url(../img/museum_first_block_mobile@2x.png) no-repeat;
+    background: url(../img/museum_first_block@4x.jpg) no-repeat;
     background-size: contain;
   }
 }
@@ -2115,12 +2115,13 @@ body._lock1 {
     margin-top: -12px;
   }
   .events__link-calendar a, .events__link-registration a {
-    font-weight: 400;
+    font-weight: 600;
     font-size: 10px;
     line-height: 1.35;
     color: #ffffff;
     font-family: "OpenSans-Regular", Arial, sans-serif;
     background-color: #11549C;
+    letter-spacing: 1px;
     border-radius: 50px;
     padding: 10px 20px;
   }
@@ -2137,7 +2138,8 @@ body._lock1 {
     display: inherit;
     justify-items: center;
     width: 100%;
-    background: url(../img/img_events_bg.png) center 0 no-repeat;
+    background: url(../img/img_events_bg@x4.png) center 0 no-repeat;
+    background-size: contain;
     padding-top: 20px;
     padding-bottom: 0;
     grid-column: 1/3;
@@ -3595,6 +3597,7 @@ body._lock1 {
   width: 265px;
   height: 308px;
   text-align: start;
+  overflow: hidden;
 }
 .exposition-list__item:hover {
   opacity: 0.8;
@@ -3618,6 +3621,9 @@ body._lock1 {
   line-height: 1.35;
   color: #002B59;
   font-family: "OpenSans-Bold", Arial, sans-serif;
+  display: block;
+  max-height: 47px;
+  overflow: hidden;
 }
 .exposition-list__text {
   padding-left: 10px;
@@ -3626,6 +3632,8 @@ body._lock1 {
   line-height: 1.35;
   color: #5A7FA7;
   font-family: "OpenSans-Regular", Arial, sans-serif;
+  margin-top: -2px;
+  line-height: 20px;
 }
 
 @media (max-width: 767.98px) {

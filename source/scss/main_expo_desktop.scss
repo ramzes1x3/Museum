@@ -50,6 +50,7 @@
     width: 265px;
     height: 308px;
     text-align: start;
+    overflow: hidden;
 
     &:hover{
       opacity: 0.8;
@@ -74,11 +75,16 @@
     margin-bottom: 5px;
     @include font_base(700, 17px, 1.35, #002B59);
     font-family: $open_sans_bold;
+    display: block;
+    max-height: 47px;
+    overflow: hidden
   }
 
   &__text {
     padding-left: 10px;
     @include font_base(600, 12px, 1.35, #5A7FA7);
     font-family: $open_sans_regular;
+    margin-top: -2px;
+    line-height: 20px;
   }
 }
